@@ -126,25 +126,64 @@
             <h3>3. Plastering & Painting</h3>
             <p>Aikin siminti da fenti mai kyau. Muna ba da garanti akan dukkan aikinmu.</p>
         </div>
-    </div>
+    </div><section class="gallery">
+  <h2 style="text-align: center; color: #1a4d2e; margin-bottom: 30px;">Hotunan Ayyukanmu</h2>
+  <div class="grid">
     
-    <h2 style="text-align: center; color: #1a4d2e; margin-top: 50px;">Hotunan Ayyukanmu</h2>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1504917595217-3404f70a0793?w=400&h=300&fit=crop" alt="Foundation Work" loading="lazy">
-            <p>Foundation Work</p>
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1580627944550-dead3d0c3022?w=400&h=300&fit=crop" alt="Block Work" loading="lazy">
-            <p>Block Work</p>
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695c952952?w=400&h=300&fit=crop" alt="Column Casting" loading="lazy">
-            <p>Column Casting</p>
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop" alt="Roofing" loading="lazy">
-            <p>Roofing</p>
+    <div class="card">
+      <img src="1.jpg" alt="Foundation Work">
+      <h3>Foundation Work</h3>
+    </div>
+
+    <div class="card">
+      <img src="2.jpg" alt="Block Work">
+      <h3>Block Work</h3>
+    </div>
+
+    <div class="card">
+      <img src="3.jpg" alt="Column Casting">
+      <h3>Column Casting</h3>
+    </div>
+
+    <div class="card">
+      <img src="4.jpg" alt="Roofing Work">
+      <h3>Roofing Work</h3>
+    </div>
+
+    <div class="card">
+      <img src="5.jpg" alt="Finishing Work">
+      <h3>Finishing Work</h3>
+    </div>
+
+    <div class="card">
+      <img src="6.jpg" alt="Project 6">
+      <h3>Project 6</h3>
+    </div>
+
+    <div class="card">
+      <img src="7.jpg" alt="Project 7">
+      <h3>Project 7</h3>
+    </div>
+
+    <div class="card">
+      <img src="8.jpg" alt="Project 8">
+      <h3>Project 8</h3>
+    </div>
+
+    <div class="card">
+      <img src="9.jpg" alt="Project 9">
+      <h3>Project 9</h3>
+    </div>
+
+    <div class="card">
+      <img src="10.jpg" alt="Project 10">
+      <h3>Project 10</h3>
+    </div>
+
+  </div>
+</section>
+    
+
         </div>
     </div>
 </div>
