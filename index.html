@@ -36,7 +36,25 @@
     font-weight:bold;
     font-size:1.1rem;
     box-shadow:0 4px 8px rgba(0,0,0,0.2);}}.sticky-cta{
+    background:var(--gold);.sticky-cta{
     background:var(--gold);
+    padding:12px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    animation:blink 1.2s infinite;
+}
+.sticky-cta a{
+    color:#000;
+    font-weight:bold;
+    margin:0 20px;
+    font-size:1.1rem;
+}
+@keyframes blink{
+    0%, 100%{opacity:1;}
+    50%{opacity:0.6;}
+}
     padding:10px;
     text-align:center;
     position:sticky;
