@@ -1,191 +1,83 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ha">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KUMBOTSO TRUE BUILDER - Masana Gini Na Gaskiya</title>
-  <meta name="description" content="Kamfanin gini mai inganci. Sabis na gina gida, reno, da tsara gini. 20% Raba-aji a 2026.">
-  
-  <!-- DON THUMBNAIL WHATSAPP/FACEBOOK -->
-  <meta property="og:title" content="KUMBOTSO TRUE BUILDER">
-  <meta property="og:description" content="Masana Gini Na Gaskiya | 20% Raba-aji a 2026">
-  <meta property="og:image" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/cover.jpg">
-  <meta property="og:url" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/">
-  <meta name="twitter:card" content="summary_large_image">
- <style>
-header a{ padding:8px 18px; border-radius:50px; color:#fff; font-weight:bold; text-decoration:none; animation:float 2s ease-in-out infinite; }
-header a[href^="tel:"]{ background:linear-gradient(135deg, #25D366, #128C7E); }
-header a[href^="https://wa.me"]{ background:linear-gradient(135deg, #FF0000, #CC0000); }
-@keyframes float{ 0%,100% {transform:translateY(0)} 50% {transform:translateY(-6px)} }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KUMBOTSO TRUE BUILDER - Masana Gini na Gaskiya</title>
 <style>
-header a{ padding:8px 18px; border-radius:50px; color:#fff; font-weight:bold; text-decoration:none; animation:float 2s ease-in-out infinite; }
-header a[href^="tel:"]{ background:linear-gradient(135deg, #25D366, #128C7E); }
-header a[href^="https://wa.me"]{ background:linear-gradient(135deg, #FF0000, #CC0000); }
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Arial, sans-serif; }
+body { background:#f8f9fa; color:#333; line-height:1.6; }
+
+/* STICKY BUTTONS - KORE DA JA */
+.sticky-cta {
+  position:sticky; top:0; z-index:999;
+  display:flex; justify-content:space-around; gap:10px;
+  background:#fff; padding:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.sticky-cta a {
+  flex:1; text-align:center; padding:14px; border-radius:50px; 
+  color:#fff; font-weight:bold; text-decoration:none; font-size:16px;
+  animation:float 2.5s ease-in-out infinite; transition:0.3s;
+}
+.sticky-cta a:hover { transform:scale(1.05); }
+.sticky-cta a[href^="tel:"]{ background:linear-gradient(135deg, #25D366, #128C7E); box-shadow:0 4px 15px rgba(37,211,102,0.4); }
+.sticky-cta a[href^="https://wa.me"]{ background:linear-gradient(135deg, #FF0000, #CC0000); box-shadow:0 4px 15px rgba(255,0,0,0.4); }
 @keyframes float{ 0%,100% {transform:translateY(0)} 50% {transform:translateY(-6px)} }
+
+/* HEADER + COVER */
+header { position:relative; text-align:center; color:#fff; }
+.cover-img { width:100%; height:280px; object-fit:cover; display:block; filter:brightness(0.6); }
+.logo { width:130px; height:130px; border-radius:50%; border:5px solid #FFD700; box-shadow:0 0 25px #FFD700; margin-top:-65px; position:relative; z-index:2; background:#fff; }
+header h1 { font-size:32px; margin:15px 0 5px; color:#0a1a2f; }
+.tagline { color:#D4AF37; font-weight:bold; font-size:15px; margin-bottom:8px; }
+.location { font-size:15px; color:#555; margin-bottom:20px; }
+
+/* PROMO BAR */
+.promo { background:linear-gradient(135deg, #FF0000, #CC0000); color:#fff; text-align:center; padding:18px; font-weight:bold; font-size:16px; animation:pulse 2s infinite; }
+@keyframes pulse{ 0%,100%{opacity:1} 50%{opacity:0.8} }
+
+/* CONTENT */
+.container { padding:30px 20px; max-width:900px; margin:auto; background:#fff; border-radius:15px; margin-top:20px; box-shadow:0 5px 20px rgba(0,0,0,0.05); }
+h2 { text-align:center; margin:20px 0; color:#0a1a2f; font-size:26px; }
+.container img { width:100%; border-radius:12px; margin-bottom:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+
+/* FOOTER */
+footer { text-align:center; padding:20px; background:#0a1a2f; color:#fff; margin-top:30px; }
 </style>
-  <style>
-    :root{--gold:#FFD700;--red:#D90429;--blue:#1A2A44;--green:#25D366;--white:#fff}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#f5f5f5;color:#222;line-height:1.6}
-    header{text-align:center;padding:40px 20px;background:linear-gradient(135deg,var(--blue),#0d1b2a);color:var(--white)}
-    .logo{width:120px;height:120px;border-radius:50%;border:4px solid var(--gold);margin:0 auto 15px;display:block;object-fit:cover;box-shadow:0 0 25px rgba(255,215,0,.6);animation:float 3s ease-in-out infinite}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-    h1{font-size:clamp(24px,5vw,36px);font-weight:800}
-    .tagline{color:var(--gold);font-weight:600;margin-top:5px}
-    .promo-bar{background:var(--red);color:var(--white);padding:12px;text-align:center;font-weight:800;animation:pulse 1.5s infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.8}}.btn{
-    display:block;
-    width:90%;
-    margin:10px auto;
-    padding:15px;
-    background:var(--gold);
-    color:#000;
-    text-align:center;
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:bold;
-    font-size:1.1rem;/* Header Mai Launi + Buttons suna motsawa */
-header{
-    background:#fff;
-    padding:8px 0;
-    position:sticky;
-    top:0;
-    z-index:9999;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
-header a{
-    padding:8px 16px;
-    border-radius:50px;
-    color:#fff;
-    font-weight:bold;
-    text-decoration:none;
-    font-size:0.9rem;
-    box-shadow:0 3px 10px rgba(0,0,0,0.3);
-    animation:pulse 2s infinite;
-    transition:all 0.3s ease;
-}
-header a:active{
-    transform:scale(0.9);
-}
-/* KIRA = KORE */
-header a.kira{
-    background:linear-gradient(135deg, #25D366, #128C7E);
-}
-/* WHATSAPP = JA */
-header a.whatsapp{
-    background:linear-gradient(135deg, #FF0000, #CC0000);
-}
-@keyframes pulse{
-    0%, 100%{transform:scale(1);}
-    50%{transform:scale(1.08);}
-}
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);}}.sticky-cta{
-    background:var(--gold);.sticky-cta{
-    background:var(--gold);
-    padding:12px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:999;
-    animation:blink 1.2s infinite;
-}
-.sticky-cta a{
-    color:#000;
-    font-weight:bold;
-    margin:0 20px;
-    font-size:1.1rem;
-}
-@keyframes blink{
-    0%, 100%{opacity:1;}
-    50%{opacity:0.6;}
-}
-    padding:10px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:999;
-    animation:blink 1.5s infinite;
-}
-.sticky-cta a{
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    margin:0 15px;
-    font-size:1rem;
-}
-@keyframes blink{
-    0%, 100%{opacity:1;}
-    50%{opacity:0.5;}}/* Buttons Kamar Logo - Kore da Ja */
-.floating-btns{
-    position:fixed;
-    top:15px;
-    right:10px;
-    display:flex;
-    gap:12px;
-    z-index:9999;
-}
-.floating-btns a{
-    padding:12px 18px;
-    border-radius:50px;
-    color:#fff;
-    font-weight:bold;
-    font-size:0.9rem;
-    text-decoration:none;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
-    animation:float 2s ease-in-out infinite;
-    transition:all 0.3s ease;
-}
-.floating-btns a:active{
-    transform:scale(0.9);
-}
-/* KIRA = KORE */
-.floating-btns .kira{
-    background:linear-gradient(135deg, #25D366, #128C7E);
-}
-/* WHATSAPP = JA */
-.floating-btns .whatsapp{
-    background:linear-gradient(135deg, #FF0000, #CC0000);
-}
-@keyframes float{
-    0%, 100%{transform:translateY(0px);}
-    50%{transform:translateY(-8px);}
-}
-</style>
+</head>
 <body>
-   <a href="https://wa.me/2347038118332">💬 WhatsApp</a>
+
+<div class="sticky-cta">
+    <a href="tel:+2347038118332">📞 Kira</a>
+    <a href="https://wa.me/2347038118332">💬 WhatsApp</a>
 </div>
+
+<header>
+    <img src="cover.jpg" alt="Kumbotso True Builder Cover" class="cover-img">
+    <img src="company-profile.jpg" alt="Kumbotso True Builder Logo" class="logo">
+    <h1>KUMBOTSO TRUE BUILDER</h1>
+    <p class="tagline">MASANA GINI NA GASKIYA | QUALITY • TRUST • SPEED</p>
+    <p class="location">📍 Kumbotso, Kano State, Nigeria</p>
+</header>
+
+<div class="promo">
+    🔥 WATA BIYU KAWAI SUKA RAGE A 2026 | 20% RABA-AJI + GARANTI SHEKARU 5 🔥
 </div>
-<div class="whatsapp">
-<a href="https://wa.me/2347038118332">💬 WhatsApp</a>
- <a href="https://maps.google.com/?q=Kumbotso+Kano">📍 Kumbotso, Kano State, Nigeria</a>
+
+<div class="container">
+    <h2>Aikin Hannunmu</h2>
+    <img src="work1.jpg" alt="Aikin Gini 1">
+    <p>Muna gina gidaje masu inganci, Masallatai, da Shaguna. Tare da tawagar kwarru da kayan aiki na zamani.</p>
+    
+    <h2>Me Ya Sa Zaka Zabe Mu?</h2>
+    <p>✅ <b>Inganci:</b> Muna amfani da kayan gini na aji 1<br>
+    ✅ <b>Sauri:</b> Muna kaiwa ga burin ka cikin lokaci<br>
+    ✅ <b>Dogaro:</b> Garanti na shekaru 5 akan duk aiki</p>
 </div>
-   
-    </div>
-  </section>
-  <section>
-    <h2 style="text-align:center;margin-bottom:10px;">Aikin Hannunmu</h2>
-    <div class="gallery">
-      <img src="1.jpg" alt="Aiki 1"><img src="2.jpg" alt="Aiki 2"><img src="3.jpg" alt="Aiki 3">
-      <img src="4.jpg" alt="Aiki 4"><img src="5.jpg" alt="Aiki 5"><img src="6.jpg" alt="Aiki 6">
-      <img src="7.jpg" alt="Aiki 7"><img src="8.jpg" alt="Aiki 8"><img src="9.jpg" alt="Aiki 9">
-      <img src="10.jpg" alt="Aiki 10">
-    </div>
-  </section>
-  <section style="text-align:center">
-    <div class="card">
-    <h2>Tuntube Mu Yanzu</h2>
-    <p style="text-align:center; margin-bottom:15px;">
-      <b>Address:</b> Kumbotso Befi, Abuja Municipal Area Council, FCT Nigeria</p>
-    <div class="floating-btns">
-    <a href="tel:+2347038118332" class="kira">📞 <a>Kira</a>
-    <a href="https://wa.me/2347038118332" class="whatsapp">💬 <a>WhatsApp</a>
-</div>
-</div>
-</div>
-  </section>
-  <footer>© 2026 KUMBOTSO TRUE BUILDER. Duk hakkoki an kiyaye su. <br>Allah Ya Albarkaci Aikinka.</footer>
+
+<footer>
+    <p>© 2026 KUMBOTSO TRUE BUILDER. Duk haƙƙoƙi sun tanƙwara.</p>
+</footer>
+
 </body>
 </html>
