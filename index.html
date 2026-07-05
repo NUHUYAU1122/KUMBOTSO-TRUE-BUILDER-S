@@ -1,81 +1,75 @@
 <!DOCTYPE html>
 <html lang="ha">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KUMBOTSO TRUE BUILDER - Masana Gini na Gaskiya</title>
-<style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Arial, sans-serif; }
-body { background:#f8f9fa; color:#333; }
-.sticky-cta { position:sticky; top:0; z-index:999; display:flex; justify-content:center; gap:15px; background:#fff; padding:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); }
-.sticky-cta a { padding:12px 25px; border-radius:50px; color:#fff; font-weight:bold; text-decoration:none; font-size:16px; animation:float 2.5s ease-in-out infinite; display:flex; align-items:center; gap:8px; }
-.sticky-cta a[href^="tel:"]{ background:#25D366; }
-.sticky-cta a[href^="https://wa.me"]{ background:#FF0000; }
-@keyframes float{ 0%,100% {transform:translateY(0)} 50% {transform:translateY(-5px)} }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUMBOTSO TRUE BUILDER - Masana Gini Na Gaskiya</title>
+  <meta name="description" content="Kamfanin gini mai inganci. Sabis na gina gida, reno, da tsara gini. 20% Raba-aji a 2026.">
+  
+  <!-- DON THUMBNAIL WHATSAPP/FACEBOOK -->
+  <meta property="og:title" content="KUMBOTSO TRUE BUILDER">
+  <meta property="og:description" content="Masana Gini Na Gaskiya | 20% Raba-aji a 2026">
+  <meta property="og:image" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/cover.jpg">
+  <meta property="og:url" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/">
+  <meta name="twitter:card" content="summary_large_image">
 
-header { text-align:center; background:#0a1a2f; padding-bottom:20px; }
-.cover-img { width:100%; height:300px; object-fit:cover; display:block; } /* NA QARA GIRMANSA ZUWA 300px */
-.logo { width:120px; height:120px; border-radius:50%; border:4px solid #FFD700; box-shadow:0 0 20px #FFD700; margin-top:-60px; background:#fff; position:relative; z-index:10; }
-
-header h1 { font-size:26px; margin:15px 0 5px; color:#fff; }
-.tagline { color:#FFD700; font-weight:bold; font-size:14px; }
-.promo { background:#FF9500; color:#fff; text-align:center; padding:16px; margin:20px; border-radius:15px; font-weight:bold; font-size:16px; }
-.container { padding:20px; max-width:900px; margin:auto; }
-h2 { text-align:center; margin:20px 0; color:#0a1a2f; }
-.grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; } 
-.grid img { width:100%; height:160px; object-fit:cover; border-radius:10px; transition:0.3s; } /* DUK SUN ZAMA DAIDAI */
-.grid img:hover { transform:scale(1.03); }
-.contact { text-align:center; padding:30px 20px; }
-.contact p { margin:8px 0; font-size:16px; }
-footer { text-align:center; padding:20px; background:#0a1a2f; color:#fff; }
-</style>
+  <style>
+    :root{--gold:#FFD700;--red:#D90429;--blue:#1A2A44;--green:#25D366;--white:#fff}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f5f5f5;color:#222;line-height:1.6}
+    header{text-align:center;padding:40px 20px;background:linear-gradient(135deg,var(--blue),#0d1b2a);color:var(--white)}
+    .logo{width:120px;height:120px;border-radius:50%;border:4px solid var(--gold);margin:0 auto 15px;display:block;object-fit:cover;box-shadow:0 0 25px rgba(255,215,0,.6);animation:float 3s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    h1{font-size:clamp(24px,5vw,36px);font-weight:800}
+    .tagline{color:var(--gold);font-weight:600;margin-top:5px}
+    .promo-bar{background:var(--red);color:var(--white);padding:12px;text-align:center;font-weight:800;animation:pulse 1.5s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.8}}
+    .cta-wrap{display:flex;gap:10px;justify-content:center;margin:20px 10px;flex-wrap:wrap}
+    .btn{padding:14px 20px;border-radius:12px;font-weight:800;text-decoration:none;color:var(--white);display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 15px rgba(0,0,0,.2)}
+    .btn-call{background:var(--green)} .btn-wa{background:var(--red)} .btn-map{background:var(--blue)}
+    .sticky-cta{position:fixed;top:15px;right:15px;z-index:999;display:flex;gap:10px}
+    .sticky-cta a{padding:12px 16px;border-radius:50px;font-size:14px;font-weight:800;text-decoration:none;color:var(--white);box-shadow:0 4px 12px rgba(0,0,0,.3)}
+    .sticky-call{background:var(--green)} .sticky-wa{background:var(--red)}
+    section{padding:30px 20px;max-width:1000px;margin:auto}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
+    .gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+    footer{background:var(--blue);color:var(--white);text-align:center;padding:20px;font-size:14px;margin-top:40px}
+    footer a{color:var(--gold);text-decoration:none}
+  </style>
 </head>
 <body>
-
-<div class="sticky-cta">
-    <a href="tel:+2347038118332">📞 Kira</a>
-    <a href="https://wa.me/2347064851422">💬 WhatsApp</a>
-</div>
-
-<header>
-    <img src="cover.jpg" alt="Kumbotso True Builder Cover" class="cover-img"> <!-- WANNAN SHINE BABBAN HOTO -->
-    <img src="company-profile.jpg" alt="Kumbotso True Builder Logo" class="logo">
+  <div class="sticky-cta">
+    <a href="tel:+2347036936911" class="sticky-call">📞 Kira</a>
+    <a href="https://wa.me/2347036936911" class="sticky-wa" target="_blank">💬 WhatsApp</a>
+  </div>
+  <header>
+    <img src="company-profile.jpg" alt="KUMBOTSO TRUE BUILDER Logo" class="logo">
     <h1>KUMBOTSO TRUE BUILDER</h1>
-    <p class="tagline">Masana Gini Na Gaskiya | Kumbotso, Kano State, Nigeria</p>
-</header>
-
-<div class="promo">
-    🎉 20% RABA-AJI 🎉 <br>
-    Ga sabbin abokan ciniki na Watan nan
-</div>
-
-<div class="container">
-    <h2>Aikin Hannunmu</h2>
-    <div class="grid">
-        <img src="work1.jpg" alt="Aiki 1">
-        <img src="work2.jpg" alt="Aiki 2">
-        <img src="work3.jpg" alt="Aiki 3">
-        <img src="work4.jpg" alt="Aiki 4">
-        <img src="work5.jpg" alt="Aiki 5">
-        <img src="work6.jpg" alt="Aiki 6">
-        <img src="work7.jpg" alt="Aiki 7">
-        <img src="work8.jpg" alt="Aiki 8">
-        <img src="work9.jpg" alt="Aiki 9">
-        <img src="work10.jpg" alt="Aiki 10">
+    <p class="tagline">MASANA GINI NA GASKIYA | QUALITY • TRUST • SPEED</p>
+  </header>
+  <div class="promo-bar">🔥 WATA BIYU KAWAI SUKA RAGE A 2026 | 20% RABA-AJI + GARANTI SHEKARU 5 🔥</div>
+  <section>
+    <div class="cta-wrap">
+      <a href="tel:+2347036936911" class="btn btn-call">📞 Kira Yanzu</a>
+      <a href="https://wa.me/2347036936911" class="btn btn-wa" target="_blank">💬 WhatsApp</a>
+      <a href="https://maps.google.com/?q=No+237+Aminu+Kano+Crescent+Wuse+II+Abuja" class="btn btn-map" target="_blank">📍 Google Map</a>
     </div>
-</div>
-
-<div class="contact">
-    <h2>Tuntube Mu</h2>
-    <p><b>Address:</b> Kumbotso LGA, Kano State, Nigeria</p>
+  </section>
+  <section>
+    <h2 style="text-align:center;margin-bottom:10px;">Aikin Hannunmu</h2>
+    <div class="gallery">
+      <img src="1.jpg" alt="Aiki 1"><img src="2.jpg" alt="Aiki 2"><img src="3.jpg" alt="Aiki 3">
+      <img src="4.jpg" alt="Aiki 4"><img src="5.jpg" alt="Aiki 5"><img src="6.jpg" alt="Aiki 6">
+      <img src="7.jpg" alt="Aiki 7"><img src="8.jpg" alt="Aiki 8"><img src="9.jpg" alt="Aiki 9">
+      <img src="10.jpg" alt="Aiki 10">
+    </div>
+  </section>
+  <section style="text-align:center">
+    <h3>Tuntube Mu</h3>
+    <p><b>Address:</b> No. 237 Aminu Kano Crescent, Wuse II, Abuja</p>
     <p><b>Email:</b> <a href="mailto:kumbotstruebuilder@gmail.com">kumbotstruebuilder@gmail.com</a></p>
-    <p><b>Phone/WhatsApp:</b> +234 7064851422</p>
-</div>
-
-<footer>
-    <p>© 2026 KUMBOTSO TRUE BUILDER. Duk hakkoki an kiyaye su.</p>
-    <p>Allah Ya Albarkaci Aikinka.</p>
-</footer>
-
+    <p><b>Phone/WhatsApp:</b> +234 703 693 6911</p>
+  </section>
+  <footer>© 2026 KUMBOTSO TRUE BUILDER. Duk hakkoki an kiyaye su. <br>Allah Ya Albarkaci Aikinka.</footer>
 </body>
-</html>p
+</html>
