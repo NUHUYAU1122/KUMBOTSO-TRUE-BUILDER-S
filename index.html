@@ -1,80 +1,159 @@
 <!DOCTYPE html>
 <html lang="ha">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KUMBOTSO TRUE BUILDER - Masana Gini Na Gaskiya</title>
-  <meta name="description" content="Kamfanin gini mai inganci. Sabis na gina gida, reno, da tsara gini. 20% Raba-aji a 2026.">
-  
-  <!-- DON THUMBNAIL WHATSAPP/FACEBOOK -->
-  <meta property="og:title" content="KUMBOTSO TRUE BUILDER">
-  <meta property="og:description" content="Masana Gini Na Gaskiya | 20% Raba-aji a 2026">
-  <meta property="og:image" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/cover.jpg">
-  <meta property="og:url" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUMBOTSO TRUE BUILDER - Masana Gini Na Gaskiya</title>
+    <meta name="description" content="KUMBOTSO TRUE BUILDER - Kamfanin gini na zamani. Masana gini, gyaran gida, da kayan gini masu inganci a Kano.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body { background: #f8f9fa; color: #333; line-height: 1.6; }
 
-  <style>
-    :root{--gold:#FFD700;--red:#D90429;--blue:#1A2A44;--green:#25D366;--white:#fff}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#f5f5f5;color:#222;line-height:1.6}
-    header{text-align:center;padding:40px 20px;background:linear-gradient(135deg,var(--blue),#0d1b2a);color:var(--white)}
-    .logo{width:120px;height:120px;border-radius:50%;border:4px solid var(--gold);margin:0 auto 15px;display:block;object-fit:cover;box-shadow:0 0 25px rgba(255,215,0,.6);animation:float 3s ease-in-out infinite}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-    h1{font-size:clamp(24px,5vw,36px);font-weight:800}
-    .tagline{color:var(--gold);font-weight:600;margin-top:5px}
-    .promo-bar{background:var(--red);color:var(--white);padding:12px;text-align:center;font-weight:800;animation:pulse 1.5s infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.8}}
-    .cta-wrap{display:flex;gap:10px;justify-content:center;margin:20px 10px;flex-wrap:wrap}
-    .btn{padding:14px 20px;border-radius:12px;font-weight:800;text-decoration:none;color:var(--white);display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 15px rgba(0,0,0,.2)}
-    .btn-call{background:var(--green)} .btn-wa{background:var(--red)} .btn-map{background:var(--blue)}
-    .sticky-cta{position:fixed;top:15px;right:15px;z-index:999;display:flex;gap:10px}
-    .sticky-cta a{padding:12px 16px;border-radius:50px;font-size:14px;font-weight:800;text-decoration:none;color:var(--white);box-shadow:0 4px 12px rgba(0,0,0,.3)}
-    .sticky-call{background:var(--green)} .sticky-wa{background:var(--red)}
-    section{padding:30px 20px;max-width:1000px;margin:auto}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
-    .gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-    footer{background:var(--blue);color:var(--white);text-align:center;padding:20px;font-size:14px;margin-top:40px}
-    footer a{color:var(--gold);text-decoration:none}
-  </style>
+        /* HEADER + COVER */
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            text-shadow: 2px 2px 8px black;
+        }
+        .tagline {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2em;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        /* PROMO BAR */
+        .promo-bar {
+            background: linear-gradient(90deg, #FF6B00, #FFD700);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* GRID HOTUNA */
+        .container { max-width: 1200px; margin: 40px auto; padding: 20px; }
+        .section-title { text-align: center; font-size: 2em; margin-bottom: 30px; color: #0A3D62; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .grid img:hover { transform: scale(1.05); }
+
+        /* LOCATION */
+        .location {
+            background: #0A3D62;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* WHATSAPP BUTTON MAI MOTSI */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 18px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            animation: pulse 2s infinite;
+            z-index: 999;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <div class="sticky-cta">
-    <a href="tel:+2347036936911" class="sticky-call">📞 Kira</a>
-    <a href="https://wa.me/2347036936911" class="sticky-wa" target="_blank">💬 WhatsApp</a>
-  </div>
-  <header>
-<img src="./aiki1.jpg" class="hero"> alt="KUMBOTSO TRUE BUILDER Logo" class="logo">
-    <h1>KUMBOTSO TRUE BUILDER</h1>
-    <p class="tagline">MASANA GINI NA GASKIYA | QUALITY • TRUST • SPEED</p>
-  </header>
-  <div class="promo-bar">🔥 WATA BIYU KAWAI SUKA RAGE A 2026 | 20% RABA-AJI + GARANTI SHEKARU 5 🔥</div>
-  <section>
-    <div class="cta-wrap">
-      <a href="tel:+2347036936911" class="btn btn-call">📞 Kira Yanzu</a>
-      <a href="https://wa.me/2347036936911" class="btn btn-wa" target="_blank">💬 WhatsApp</a>
-      <a href="https://maps.google.com/?q=No+237+Aminu+Kano+Crescent+Wuse+II+Abuja" class="btn btn-map" target="_blank">📍 Google Map</a>
+
+    <header>
+        <img src="./aiki1.jpg" class="hero" alt="KUMBOTSO TRUE BUILDER">
+        <h1>KUMBOTSO TRUE BUILDER</h1>
+        <p class="tagline">MASANA GINI NA GASKIYA</p>
+    </header>
+
+    <div class="promo-bar">
+        🔥 WATA BIYU KAWAI! RANGI NA MUSAMMAN AKAN AYUKAN GINI 🔥
     </div>
-  </section>
-  <div class="grid">
-    <img src="./aiki1.jpg" alt="Aikinmu 1">
-    <img src="./aiki2.jpg" alt="Aikinmu 2">
-    <img src="./aiki3.jpg" alt="Aikinmu 3">
-    <img src="./aiki4.jpg" alt="Aikinmu 4">
-    <img src="./aiki5.jpg" alt="Aikinmu 5">
-    <img src="./aiki6.jpg" alt="Aikinmu 6">
-    <img src="./aiki7.jpg" alt="Aikinmu 7">
-    <img src="./aiki8.jpg" alt="Aikinmu 8">
-    <img src="./aiki9.jpg" alt="Aikinmu 9">
-    <img src="./aiki10.jpg" alt="Aikinmu 10">
-</div>
+
+    <div class="container">
+        <h2 class="section-title">HOTUNAN AYUKANMU</h2>
+        <div class="grid">
+            <img src="./aiki1.jpg" alt="Aikinmu 1">
+            <img src="./aiki2.jpg" alt="Aikinmu 2">
+            <img src="./aiki3.jpg" alt="Aikinmu 3">
+            <img src="./aiki4.jpg" alt="Aikinmu 4">
+            <img src="./aiki5.jpg" alt="Aikinmu 5">
+            <img src="./aiki6.jpg" alt="Aikinmu 6">
+            <img src="./aiki7.jpg" alt="Aikinmu 7">
+            <img src="./aiki8.jpg" alt="Aikinmu 8">
+            <img src="./aiki9.jpg" alt="Aikinmu 9">
+            <img src="./aiki10.jpg" alt="Aikinmu 10">
+        </div>
     </div>
-  </section>
-  <section style="text-align:center">
-    <h3>Tuntube Mu</h3>
-    <p><b>Address:</b> No. 237 Aminu Kano Crescent, Wuse II, Abuja</p>
-    <p><b>Email:</b> <a href="mailto:kumbotstruebuilder@gmail.com">kumbotstruebuilder@gmail.com</a></p>
-    <p><b>Phone/WhatsApp:</b> +234 703 693 6911</p>
-  </section>
-  <footer>© 2026 KUMBOTSO TRUE BUILDER. Duk hakkoki an kiyaye su. <br>Allah Ya Albarkaci Aikinka.</footer>
+
+    <div class="location">
+        <h2>MUNA NAN</h2>
+        <p><b>Location:</b> Kumbotso, Kano State, Nigeria</p>
+        <p><b>Wayar Tarho:</b> +234 703 693 6911</p>
+    </div>
+
+    <a href="https://wa.me/2347036936911" class="whatsapp-btn">
+        💬 Tuntube Mu A WhatsApp
+    </a>
+
+    <footer>
+        <p>&copy; 2026 KUMBOTSO TRUE BUILDER. Dukkan Hakki An Tsareshi.</p>
+    </footer>
+
 </body>
 </html>
