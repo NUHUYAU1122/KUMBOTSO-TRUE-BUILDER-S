@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>kumbotso true builder</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:arial;background:#f5f7fa}
+*{margin:0;padding:0;box-sizing:border-box;font-family:arial}
+body{background:#f5f7fa}
 header{position:relative;height:480px}
 .hero{width:100%;height:100%;object-fit:cover;filter:brightness(0.5)}
-.logo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(10,61,98,0.9);padding:20px 35px;border-radius:15px;border:2px solid #ffd700;text-align:center}
-.logo h1{color:#ffd700;font-size:2.5em}
-.logo p{color:#fff;font-size:1.1em}
-.promo{background:linear-gradient(90deg,red,orange,gold);color:#fff;text-align:center;padding:15px;font-weight:bold;font-size:18px}
+.logo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(10,61,98,0.9);padding:20px 35px;border-radius:15px;border:3px solid #ffd700;text-align:center;box-shadow:0 0 25px rgba(255,215,0,0.5)}
+.logo h1{color:#ffd700;font-size:2.6em}
+.logo p{color:#fff;font-size:1.2em;margin-top:8px}
+.promo{background:linear-gradient(90deg,red,orange,gold);color:#fff;text-align:center;padding:16px;font-weight:bold;font-size:19px}
 .btns{text-align:center;padding:30px;background:#fff}
-.btn{padding:16px 28px;border-radius:50px;text-decoration:none;font-weight:bold;margin:10px;display:inline-block;font-size:16px}
-.call{background:#28a745;color:#fff}
-.whatsapp{background:linear-gradient(90deg,#ffd700,#ff8c00);color:#000;animation:pulse 2s infinite}
-.map{background:#0a3d62;color:#fff}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,215,0,0.8)}70%{box-shadow:0 0 0 20px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}
+.btn{padding:17px 30px;border-radius:50px;text-decoration:none;font-weight:bold;margin:10px;display:inline-block;font-size:17px}
+.call{background:linear-gradient(90deg,#28a745,#20c997);color:#fff}
+.whatsapp{background:linear-gradient(90deg,#ffd700,#ff8c00);color:#000;animation:goldpulse 2s infinite;box-shadow:0 6px 20px rgba(255,215,0,0.5)}
+.map{background:linear-gradient(90deg,#0a3d62,#1e6091);color:#fff}
+@keyframes goldpulse{0%{box-shadow:0 0 0 0 rgba(255,215,0,0.8)}70%{box-shadow:0 0 0 25px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}
 .container{max-width:1100px;margin:40px auto;padding:20px}
-h2{text-align:center;color:#0a3d62;font-size:2em;margin-bottom:30px}
+h2{text-align:center;color:#0a3d62;font-size:2.2em;margin-bottom:30px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.grid img{width:100%;height:270px;object-fit:cover;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.2)}
+.grid img{width:100%;height:270px;object-fit:cover;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.2);transition:0.4s}
+.grid img:hover{transform:scale(1.05);border:3px solid #ffd700}
 .location{background:#0a3d62;color:#fff;text-align:center;padding:40px}
+.location h2{color:#ffd700}
 footer{background:#111;color:#aaa;text-align:center;padding:20px}
 </style>
 </head>
@@ -48,7 +50,6 @@ footer{background:#111;color:#aaa;text-align:center;padding:20px}
 <div class="container">
 <h2>hotunan ayyukanmu</h2>
 <div class="grid">
-<img src="./aiki1.jpg" alt="aiki1">
 <img src="./aiki2.jpg" alt="aiki2">
 <img src="./aiki3.jpg" alt="aiki3">
 <img src="./aiki4.jpg" alt="aiki4">
@@ -62,9 +63,9 @@ footer{background:#111;color:#aaa;text-align:center;padding:20px}
 </div>
 
 <div class="location">
-<h2>muna nan</h2>
+<h2>muna nan don muku hidima</h2>
 <p>address: kumbotso, kano state, nigeria</p>
-<p>waya: +2347038118332</p>
+<p>waya: +23470381183332</p>
 </div>
 
 <footer>&copy; 2026 kumbotso true builder</footer>
