@@ -3,118 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>kumbotso true builder - masana gini na gaskiya</title>
-<meta name="description" content="kumbotso true builder - kamfanin gini na zamani. gina gida, gyara, da kayan gini masu inganci a kano.">
+<title>kumbotso true builder</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',tahoma,geneva,verdana,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#f5f7fa;color:#222}
-
-/* 1. EXPERIENCE LOGO + 2. THUMBNAIL COVER EXPERT */
-header{position:relative;height:500px;overflow:hidden}
-.hero{width:100%;height:100%;object-fit:cover;filter:brightness(0.45)}
-.logo-box{
-    position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);
-    background:rgba(10,61,98,0.85);padding:25px 40px;border-radius:20px;
-    border:3px solid #ffd700;box-shadow:0 0 30px rgba(255,215,0,0.5);
-    text-align:center
-}
-.logo-box h1{color:#ffd700;font-size:2.8em;letter-spacing:2px}
-.logo-box p{color:#fff;font-size:1.2em;margin-top:8px}
-
-/* 3. PROMO BAR */
-.promo{background:linear-gradient(90deg,#ff0000,#ff8c00,#ffd700);color:#fff;text-align:center;padding:16px;font-weight:bold;font-size:19px}
-
-/* 4. KIRA NI YANZU DA WHATSAPP MAI MOTSI NA ZINARIYA */
-.btn-section{background:#fff;padding:35px 20px;text-align:center}
-.btn{
-    padding:18px 32px;border-radius:60px;text-decoration:none;font-weight:bold;
-    font-size:17px;margin:12px;display:inline-block;transition:0.3s;border:2px solid transparent
-}
-.btn:hover{transform:translateY(-4px) scale(1.05)}
-.btn-call{
-    background:linear-gradient(90deg,#28a745,#20c997);color:#fff;
-    box-shadow:0 6px 20px rgba(40,167,69,0.4)
-}
-.btn-whatsapp{
-    background:linear-gradient(90deg,#ffd700,#ff8c00);color:#111;
-    animation:goldpulse 2s infinite;
-    box-shadow:0 6px 20px rgba(255,215,0,0.5)
-}
-.btn-map{
-    background:linear-gradient(90deg,#0a3d62,#1e6091);color:#fff
-}
-@keyframes goldpulse{
-    0%{box-shadow:0 0 0 0 rgba(255,215,0,0.8)}
-    70%{box-shadow:0 0 0 25px rgba(255,215,0,0)}
-    100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}
-}
-
-/* 5. HOTUNA 10 MEDIUM SIZE + 6. SUPER ATTRACTION */
-.container{max-width:1200px;margin:50px auto;padding:20px}
-.title{text-align:center;font-size:2.4em;color:#0a3d62;margin-bottom:35px}
-.grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px
-}
-.grid img{
-    width:100%;height:280px;object-fit:cover;border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.18);
-    transition:0.4s;border:3px solid #fff
-}
-.grid img:hover{transform:scale(1.06) rotate(-1deg);border-color:#ffd700}
-
-/* 7. LOCATION */
-.location{background:#0a3d62;color:#fff;text-align:center;padding:45px 20px}
-.location h2{font-size:2.2em;margin-bottom:15px;color:#ffd700}
-
-/* 8. FOOTER */
-footer{background:#111;color:#aaa;text-align:center;padding:25px;font-size:15px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:arial;background:#f5f7fa}
+header{position:relative;height:480px}
+.hero{width:100%;height:100%;object-fit:cover;filter:brightness(0.5)}
+.logo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(10,61,98,0.9);padding:20px 35px;border-radius:15px;border:2px solid #ffd700;text-align:center}
+.logo h1{color:#ffd700;font-size:2.5em}
+.logo p{color:#fff;font-size:1.1em}
+.promo{background:linear-gradient(90deg,red,orange,gold);color:#fff;text-align:center;padding:15px;font-weight:bold;font-size:18px}
+.btns{text-align:center;padding:30px;background:#fff}
+.btn{padding:16px 28px;border-radius:50px;text-decoration:none;font-weight:bold;margin:10px;display:inline-block;font-size:16px}
+.call{background:#28a745;color:#fff}
+.whatsapp{background:linear-gradient(90deg,#ffd700,#ff8c00);color:#000;animation:pulse 2s infinite}
+.map{background:#0a3d62;color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,215,0,0.8)}70%{box-shadow:0 0 0 20px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}
+.container{max-width:1100px;margin:40px auto;padding:20px}
+h2{text-align:center;color:#0a3d62;font-size:2em;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.grid img{width:100%;height:270px;object-fit:cover;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.2)}
+.location{background:#0a3d62;color:#fff;text-align:center;padding:40px}
+footer{background:#111;color:#aaa;text-align:center;padding:20px}
 </style>
 </head>
 <body>
 
 <header>
-    <img src="./aiki1.jpg" class="hero" alt="kumbotso true builder cover">
-    <div class="logo-box">
-        <h1>kumbotso true builder</h1>
-        <p>masana gini na gaskiya | quality first</p>
-    </div>
+<img src="./aiki1.jpg" class="hero" alt="cover">
+<div class="logo">
+<h1>kumbotso true builder</h1>
+<p>masana gini na gaskiya</p>
+</div>
 </header>
 
-<div class="promo">🔥 wata biyu kawai! 20% raba-aji + garanti na shekaru 5 🔥</div>
+<div class="promo">20% raba-aji + garanti shekaru 5</div>
 
-<div class="btn-section">
-    <a href="tel:+2347036936911" class="btn btn-call">📞 kira ni yanzu</a>
-    <a href="https://wa.me/2347036936911" class="btn btn-whatsapp">💬 tuntube mu a whatsapp</a>
-    <br>
-    <a href="https://maps.google.com" class="btn btn-map">📍 duba wurinmu a map</a>
+<div class="btns">
+<a href="tel:+2347038118332" class="btn call">kira ni yanzu</a>
+<a href="https://wa.me/2347064851422" class="btn whatsapp">whatsapp</a><br><br>
+<a href="https://maps.google.com" class="btn map">google map</a>
 </div>
 
 <div class="container">
-    <h2 class="title">hotunan ayyukanmu na musamman</h2>
-    <div class="grid">
-        <img src="./aiki1.jpg" alt="aiki 1">
-        <img src="./aiki2.jpg" alt="aiki 2">
-        <img src="./aiki3.jpg" alt="aiki 3">
-        <img src="./aiki4.jpg" alt="aiki 4">
-        <img src="./aiki5.jpg" alt="aiki 5">
-        <img src="./aiki6.jpg" alt="aiki 6">
-        <img src="./aiki7.jpg" alt="aiki 7">
-        <img src="./aiki8.jpg" alt="aiki 8">
-        <img src="./aiki9.jpg" alt="aiki 9">
-        <img src="./aiki10.jpg" alt="aiki 10">
-    </div>
+<h2>hotunan ayyukanmu</h2>
+<div class="grid">
+<img src="./aiki1.jpg" alt="aiki1">
+<img src="./aiki2.jpg" alt="aiki2">
+<img src="./aiki3.jpg" alt="aiki3">
+<img src="./aiki4.jpg" alt="aiki4">
+<img src="./aiki5.jpg" alt="aiki5">
+<img src="./aiki6.jpg" alt="aiki6">
+<img src="./aiki7.jpg" alt="aiki7">
+<img src="./aiki8.jpg" alt="aiki8">
+<img src="./aiki9.jpg" alt="aiki9">
+<img src="./aiki10.jpg" alt="aiki10">
+</div>
 </div>
 
 <div class="location">
-    <h2>muna nan don muku hidima</h2>
-    <p><b>address:</b> kumbotso, kano state, nigeria</p>
-    <p><b>wayar tarho:</b> +234 703 693 6911</p>
+<h2>muna nan</h2>
+<p>address: kumbotso, kano state, nigeria</p>
+<p>waya: +2347038118332</p>
 </div>
 
-<footer>
-    <p>&copy; 2026 kumbotso true builder. dukkan hakki an tsareshi | professional building company</p>
-</footer>
+<footer>&copy; 2026 kumbotso true builder</footer>
 
 </body>
 </html>
