@@ -116,6 +116,15 @@ footer{background:#111;color:#aaa;text-align:center;padding:20px}
     <a href="tel:+2347038118332" class="sticky-btn sticky-call">📞 Kira</a>
     <a href="https://wa.me/2347064851422" class="sticky-btn sticky-whatsapp">💬 WhatsApp</a>
 </div>
-
+<script>
+function sendToWhatsApp(){
+  let name = document.getElementById('name').value;
+  let phone = document.getElementById('phone').value;
+  let project = document.getElementById('project').value;
+  let message = document.getElementById('message').value;
+  let url = `https://wa.me/2347036936911?text=Salam%20USTAZ%0A%0AName:%20${name}%0APhone:%20${phone}%0AProject:%20${project}%0ADetails:%20${message}`;
+  window.open(url, '_blank');
+}
+</script>
 </body>
 </html>
