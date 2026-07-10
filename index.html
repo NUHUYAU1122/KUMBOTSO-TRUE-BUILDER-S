@@ -34,7 +34,13 @@ gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));ga
   z-index: 1000;     /* WANNAN SABO */
   box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* WANNAN SABO */
   .banner h1{
-background:linear-gradient(90deg,#FFD700,#FFA500,#FFD700);
+}
+/* STICKY BUTTONS */
+.sticky-btns{position:fixed;bottom:0;left:0;width:100%;display:flex;z-index:999;}
+.sticky-btns a{flex:1;text-align:center;padding:15px;color:white;text-decoration:none;font-weight:bold;font-size:16px;}
+.sticky-btns a:first-child{background:#ff0000;}
+.sticky-btns a:last-child{background:#25D366;}
+@keyframes shine{to{background-position:200% center;}}  background:linear-gradient(90deg,#FFD700,#FFA500,#FFD700);
 background-size:200% auto;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
