@@ -66,6 +66,40 @@ footer{background:#222;color:#fff;text-a
   background: rgba(0,0,0,0.5);
   padding: 20px;
   border-radius: 10px;
+}/* MENU STICKY */
+header {
+  position: sticky;
+  top: 0;
+  background: #c00;
+  z-index: 999;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { text-decoration: underline; }
+
+/* BUTTON WHATSAPP */
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.whatsapp-btn:hover { background: #1ebe5a; }
+
+/* SAKE SHANIN A WAYA */
+@media (max-width: 768px) {
+  .banner-text { position: static; text-align: center; padding: 20px; color: #000; }
+  .gallery { grid-template-columns: 1fr; }
 }
  .whatsapp-btn{display:inline-block;background:#25D366;color:white;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;margin-top:20px;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
  .whatsapp-btn:hover{background:#1ebe5a;transform:scale(1.05);}
