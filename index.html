@@ -22,13 +22,41 @@ header img{height:65px;width:auto;border-radius:8px;background:#fff;padding:4px}
 url('banner.jpg?v=1') center/cover no-repeat;height:350px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
 gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:30px 20px}
 .gallery img{width:100%;height:280px;object-fit:cover;border-radius:12px;transition:0.3s;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.15)}
-.header {
-  background: #ff0000;
-  color: white;
+header {
+  position: sticky;
+  top: 0;
+  background: #c41e3a;
+  color: #fff;
   padding: 15px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  text-align: center;
+  z-index: 999;
+}
+  nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white !important;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+}
   position: sticky;  /* WANNAN SABO */
   top: 0;            /* WANNAN SABO */
   z-index: 1000;     /* WANNAN SABO */
