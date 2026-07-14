@@ -1,13 +1,14 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>kumbotso true builders</title>
+
 <!-- THUMBNAIL COVER DON SHARE LINK -->
 <meta property="og:title" content="kumbotso true builders">
 <meta property="og:description" content="building the future - industrial structures, property development, residential estates">
-<meta property="og:image" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/thumbnail.jpg?v=2">
+<meta property="og:image" content="thumbnail.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
@@ -17,294 +18,40 @@ header{background:#c41e3a;color:#fff;padding:10px 20px;position:sticky;top:0;z-i
 header img{height:65px;width:auto;border-radius:8px;background:#fff;padding:4px}
 .header-text h1{font-size:18px;text-transform:lowercase;font-weight:700;margin:0}
 .header-text p{font-size:12px;text-transform:lowercase;opacity:0.9;margin:0}
+
+.banner{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('thumbnail.jpg') center/cover;height:350px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.banner h2{font-size:32px;margin-bottom:10px;text-transform:lowercase}
 .banner p{font-size:15px;text-transform:lowercase}
-.banner{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('thumbnail.jpg?v=2') center/cover no-repeat;height:350px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
-url('banner.jpg?v=1') center/cover no-repeat;height:350px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:30px 20px}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:30px 20px}
 .gallery img{width:100%;height:280px;object-fit:cover;border-radius:12px;transition:0.3s;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.15)}
-header {
-  position: sticky;
-  top: 0;
-  background: #c41e3a;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-  z-index: 999;
-}
-  nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.whatsapp-btn {
-  display: inline-block;
-  background: #25D366;
-  color: white !important;
-  padding: 15px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
-}
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px #000;
-}
-background:linear-gradient(90deg,#FFD700,#FFA500,#FFD700);
-background-size:200% auto;
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:shine 3s linear infinite;
- }
- @keyframes shine{to{background-position:200% center;}}
-/* STICKY BUTTONS */
-.sticky-btns{position:fixed;bottom:0;left:0;width:100%;display:flex;z-index:999;}
-.sticky-btns a{flex:1;text-align:center;padding:15px;color:white;text-decoration:none;font-weight:bold;font-size:16px;}
-.sticky-btns a:first-child{background:#ff0000;}
-.sticky-btns a:last-child{background:#25D366;} 
+.gallery img:hover{transform:scale(1.03)}
+
+.sticky-btns{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:999}
+.sticky-btns a{background:#25d366;color:#fff;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 4px 10px rgba(0,0,0,0.3);text-transform:lowercase;font-size:14px}
+.sticky-btns a.call{background:#c41e3a}
+
 footer{background:#222;color:#fff;text-align:center;padding:20px;margin-top:30px;text-transform:lowercase}
-footer{background:#222;color:#fff;text-a
-.banner {
-  position: relative;
-  text-align: center;
-}
-.banner img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
-  border-radius: 10px;
-}/* MENU STICKY */
-header {
-  position: sticky;
-  top: 0;
-  background: #c00;
-  z-index: 999;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
 
-/* BUTTON WHATSAPP */
-.whatsapp-btn {
-  display: inline-block;
-  background: #25D366;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 15px;
-}
-.whatsapp-btn:hover { background: #1ebe5a; }
-
-/* SAKE SHANIN A WAYA */
-@media (max-width: 768px) {
-  .banner-text { position: static; text-align: center; padding: 20px; color: #000; }
-.gallery { grid-template-columns: 1fr; }
-}
- .whatsapp-btn{display:inline-block;background:#25D366;color:white;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;margin-top:20px;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
- .whatsapp-btn:hover{background:#1ebe5a;transform:scale(1.05);}
- /* MENU SECTION */* MENU SECTION */
-#menu{background:#f9f9f9;padding:50px 20px;}
-#menu h2{text-align:center;margin-bottom:30px;color:#b30000;font-size:28px;}
-.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1000px;margin:auto;}
-.menu-item{background:white;border-radius:10px;padding:15px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:0.3s;}
-.menu-item:hover{transform:translateY(-5px);}
-.menu-item img{width:100%;height:200px;object-fit:cover;border-radius:8px;}
-.menu-item h3{margin:10px 0;color:#333;}
-.menu-item p{font-size:14px;color:#666;}
-.menu-item .price{display:block;margin-top:10px;font-weight:bold;color:#25D366;font-size:16px;}
-
-/* PROJECTS SECTION */
-#projects{padding:50px 20px;background:white;}
-#projects h2{text-align:center;margin-bottom:30px;color:#b30000;font-size:28px;}
-.projects-grid{display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px;}
-.project-card img{width:100%; height:200px; object-fit:cover; border-radius:8px;}
-.project-card:hover{transform:translateY(-8px);}
-.project-info{padding:18px;}
-.project-info h3{color:#b30000;margin-bottom:8px;font-size:18px;}
-.project-info p{color:#555;font-size:14px;line-height:1.7;}
-nav {
-  background: white;
-  padding: 12px;
-  text-align: center;
-}
-
-nav a {
-  color:#b30000;
-  text-decoration: none; /* WANNAN ZE GOGE LAYIN KASA */
-  font-weight: bold;
-  margin: 0 15px;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-/* MENU STICKY */
-header {
-  position: sticky;
-  top: 0;
-  background: #c00;
-  z-index: 999;
-  padding: 15px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* BUTTON WHATSAPP */
-.whatsapp-btn {
-  display: inline-block;
-  background: #25D366;
-  color: white !important;
-  padding: 15px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
-}
-  <a href="https://wa.me/2347064851422" class="whatsapp-btn">Tuntube Mu A WhatsApp</a>
-
-/* NA WAYA */
-@media (max-width: 768px) {
-  .banner-text { 
-    position: static; 
-    transform: none; 
-    color: #000; 
-    padding: 20px; 
-    background: #f1f1f1;
-  }
-  .gallery { grid-template-columns: 1fr; }
-}
-/* PROJECTS SECTION */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-.project-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  border-top: 5px solid #0a2540; /* Shuɗin Builders */
-}
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.project-info { padding: 15px; }
-.project-info h3 { color: #0a2540; margin-bottom: 10px; }
-.about-section, .services-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-.service-box {
-  background: #f0f0f0;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 10px;
-  border-left: 5px solid #0a2540; /* Shuɗin Builders */
-}
-h2 { color: #0a2540; } /* Shuɗin kai */   
- <header>
-    <img src="logo.png">
-    <h1>KUMBOTSO TRUE BUILDERS</h1>
-    <p>KANO, NIGERIA</p>
+<header>
+  <img src="logo.jpg" alt="logo">
+  <div class="header-text">
+    <h1>kumbotso true builders</h1>
+    <p>kano, nigeria | building the future</p>
   </div>
- </header>
-<nav>
-  <a href="#home">HOME</a>
-  <a href="#about">ABOUT</a> 
-  <a href="#gallery">GALLERY</a>
-  <a href="#menu">MENU</a>
-  <a href="#projects">PROJECTS</a>
-  <a href="#contact">CONTACT</a>
-</nav>
- <section class="banner">
-   <img src="banner.jpg" alt="Construction Site">
-   <div class="banner-text">
-     <h2>BUILDING DREAMS INTO REALITY</h2>
-     <p>Industrial Structures | Property | Quality Materials</p>
-   </div>
-<!-- BANNER SECTION -->
- <div class="banner">
-   <img src="images/banner.jpg" alt="Kumbotso">
-   <div class="banner-text">
-     <h1>KUMBOTSO TRUE BUILDER S</h1>
-     <p>Mu ne Mafi Kyawun Gina Gidaje</p>
-     <a href="https://wa.me/2347064851422" class="whatsapp-btn">Tuntube Mu A WhatsApp</a>
-   </div>
-<!-- END BANNER SECTION -->   
-</section>  
- <section id="about" class="about">
-  KUMBOTSO TRUE BUILDERS
-Masu Gina Mafarki zuwa Gaskiya
+</header>
 
-Mu kamfani ne na Gine-gine da Gyara Gidaje da ke Abuja. 
-Shekaru 5+ na gwaninta. Mun gina gidaje masu inganci, 
-kantuna, da masallatai. 
-
-Manzur mu shine mu ba ku gida mai karko, mai kyau, 
-da rahusa. Tare zamu gina makomar ku.
-</section><!-- SERVICES SECTION -->
-<section id="services" class="services-section">
-  <h2>Hidimomin Mu</h2>
-  <div class="service-box">
-    <h3>1. Gina Gida Sabo</h3>
-    <p>Muna gina gidaje masu inganci daga tushe har kammalawa.</p>
-  </div>
-  <div class="service-box">
-    <div class="service-box">
-    <h3>2. Gyara da Renovation</h3>
-    <p>Muna sabunta tsofaffin gidaje mu sa su zamani.</p>
-  </div>
-  <div class="service-box">
-    <h3>3. Zane da Tsari</h3>
-    <p>Muna zana tsarin gida na zamani wanda ya dace da kasafinku.</p>
+<section class="banner">
+  <div>
+    <h2>building the future</h2>
+    <p>industrial structures | property development | infrastructure works | residential estates</p>
   </div>
 </section>
-    <h3>2. Gyara da Renovation</h3>
-    <p>Muna sabunta tsofaffin gidaje mu sa su zamani.</p>
-  </div>
-  <div class="service-box">
-    <h3>3. Zane da Tsari</h3>
-    <p>Muna zana tsarin gida na zamani wanda ya dace da kasafinku.</p>
-  </div>
-</section>
-<a href="tel:07064851422" class="call-btn">kira yanzu</a>
- </section>
- <section id="gallery" class="gallery">
+
+<section class="gallery">
   <img src="aiki1.jpg" alt="aiki 1">
   <img src="aiki2.jpg" alt="aiki 2">
   <img src="aiki3.jpg" alt="aiki 3">
@@ -319,227 +66,11 @@ da rahusa. Tare zamu gina makomar ku.
   <img src="aiki12.jpg" alt="aiki 12">
   <img src="aiki13.jpg" alt="aiki 13">
   <img src="aiki14.jpg" alt="aiki 14">
-<img src="aiki7.jpg" alt="Sabon aiki">
-<section id="gallery">...</section>
-<section id="contact">...</section>
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-  <h2>Tuntube Mu Yanzu</h2>
-  <p>Shin kuna son Gina Gida Sabo? Ku kira mu</p>
-  <a href="tel:+234738118332" class="btn-call">📞 Kira Mu</a>
-  <a href="https://wa.me/2347064841422" class="btn-whatsapp">💬 WhatsApp</a>
-  <p><b>Adireshi:</b> Kano, Nigeria</p>
-/* CONTACT SECTION */
-.contact-section {
-  background: #0a2540; /* Shuɗin duhu */
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
-.btn-call, .btn-whatsapp {
-  display: inline-block;
-  background: white;
-  color: #0a2540;
-  padding: 15px 30px;
-  margin: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.btn-whatsapp { background: #25D366; color: white; }
-       /section>* GALLERY SECTION */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
-.gallery img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 3px solid #0a2540; /* Shuɗin frame */
-  transition: transform 0.3s;
-}
-.gallery img:hover {
-  transform: scale(1.05); /* Zai girma kadan lokacin da ka taba shi */
-}} 
-/* MENU PUBLISHING SECTION */
-<section id="menu">
-  <h2>SERVICES / MENU MU</h2>
-  <div class="menu-grid">
-    
-    <div class="menu-item">
-      <img src="images/service1.jpg" alt="Building Materials">
-      <h3>Building Materials</h3>
-      <p>Cement, Iron, Bricks, Roofing Sheets da sauran su</p>
-      <span class="price">Tuntuɓe mu domin farashi</span>
-    </div>
-
-    <div class="menu-item">
-      <img src="images/service2.jpg" alt="Construction">
-      <h3>Construction & Building</h3>
-      <p>Gina gida, Shop, Office daga farko zuwa karshe</p>
-      <span class="price">Farashi mai sauki</span>
-    </div>
-.testimonial {
-  background: #111;  /* baki mai duhu */
-  color: #fff;       /* rubutu fari */
-  padding: 20px;
-  border-left: 5px solid red;
-  margin: 15px 0;
-  border-radius: 10px;
-}
-.testimonial span {
-  color: red;
-  font-weight: bold;
-}
-    <div class="menu-item">
-      <img src="images/service3.jpg" alt="Renovation">
-      <h3>Renovation & Painting</h3>
-      <p>Gyaran gida, Painting, Tiling, Electrical</p>
-      <span class="price">Tuntuɓe mu yanzu</span>
-    </div>
-
-/* NA WAYA */
-@media (max-width: 768px) {
-  .banner img {
-    height: 250px;
-  }
-  .banner-text h1 {
-    font-size: 22px;
-  }
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}@media (max-width: 768px) {
-  .banner-text { position: static; text-align: center; padding: 20px; }
-  .gallery { grid-template-columns: 1fr; }
-}  </div>
 </section>
 
-<!-- PROJECTS & MAJOR WORKS SECTION -->
-<section id="projects">
-  <h2>PROJECTS & MAJOR WORKS</h2>
-  <div class="projects-grid">
-    
-    <div class="project-card">
-      <img src="images/aiki1.jpg" alt="Gidan Zamani">
-      <div class="project-info">
-        <h3>Gidan Zamani - Kumbotso</h3>
-        <p>Mun gina gida mai dakuna 4, parlors 2, kitchen na zamani. An kammala cikin watanni 4. Abokin ciniki ya gamsu.</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/aiki2.jpg" alt="Commercial Building">
-      <div class="project-info">
-        <h3>Commercial Building - Kano</h3>
-        <p>Mun gina shop mai stores 6. Mun yi tiling, painting da electrical duka. Project na miliyan 8.</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/aiki3.jpg" alt="Gate & Fence">
-      <div class="project-info">
-        <h3>Gate & Fence Project</h3>
-        <p>Mun samar da gate na iron mai karfi + block fence na mita 200. Aiki mai tsafta da inganci.</p>
-      </div>
-    </div>
-
-  </div>
-</section>  <!-- FORM QUOTATION -->
-<div class="section">
-  <h2>📝 Nemi Qoutation Kyauta</h2>
-  <form action="https://wa.me/2347038118332" method="get">
-    <input type="text" name="text" placeholder="Sunan ka" required style="width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:5px;">
-    <input type="tel" name="text" placeholder="Lambar waya" required style="width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:5px;">
-    <textarea name="text" placeholder="Rubuta irin aikin da kake so... misali: gina gida mai daki 3" required style="width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:5px;height:100px;"></textarea>
-    <button type="submit" style="width:100%;padding:12px;background:#25D366;color:#fff;border:none;border-radius:5px;font-weight:bold;">Aiko ta WhatsApp</button>
-  </form>
-</div>
-<!-- CUSTOMER REVIEWS -->
-<div class="section">
-  <h2>⭐ Abokan Aiki Suna Cewa</h2>
-  
-  <div style="background:#1a1a1a; padding:20px; margin:15px 0; border-radius:10px; border-left:4px solid #ff0000;">
-    <p>"Kumbotso True Builders sun gyara gidana. Aiki mai tsafta da sauri. Ina ba da shawarar su 100%"</p>
-    <p style="color:#ff0000; font-weight:bold;">- Alh. Musa, Kano</p>
-  </div></div>!-- ADDRESS + MAP -->
-<div class="section">
-  <h2>📍 Ofishin Mu</h2>
-  
-  <div style="display:flex; flex-wrap:wrap; gap:20px;">
-    <!-- BAYANIN ADDRESS -->
-    <div style="flex:1; min-width:250px;">
-      <h3 style="color:#ff0000;">Kumbotso True Builders</h3>
-      <p>📍 Kumbotso LGA, Kano State, Nigeria</p>
-      <p>📞 0703 811 8332</p>
-      <p>⏰ Mon - Sat: 8am - 6pm</p>
-      
-      <a href="https://wa.me/2347064851422" style="display:inline-block; margin-top:10px; padding:10px 20px; background:#25D366; color:#fff; text-decoration:none; border-radius:5px;">
-        💬 WhatsApp Mu
-      </a>
-    </div>
-    <!-- GOOGLE MAP -->
-    <div style="flex:1; min-width:250px;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900!2d8.5167!3d11.9667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKumbotso%20LGA!5e0!3m2!1sen!2sng!4v1234567890"
-        width="100%" 
-        height="250" 
-        style="border:0; border-radius:10px;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</div>
-        style="border:0; border-radius:10px;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</div>
-
-  <div style="background:#1a1a1a; padding:20px; margin:15px 0; border-radius:10px; border-left:4px solid #ff0000;">
-    <p>"Sun gina mana shop a kasuwa. Farashi mai kyau kuma ba su cuta ba. Godiya."</p>
-    <p style="color:#ff0000; font-weight:bold;">- Hajiya Aisha, Kumbotso</p>
-  </div>
-
-  <div style="background:#1a1a1a; padding:20px; margin:15px 0; border-radius:10px; border-left:4px solid #ff0000;">
-    <p>"Aikin tiling da painting sun yi mana. Professional gaske. Za mu sake kira su."</p>
-    <p style="color:#ff0000; font-weight:bold;">- Engr. Bello, Abuja</p>
-  </div>
-</div>
-<!-- ABOUT US -->
-<div class="section">
-  <h2>🏗️ Game da Mu - About Us</h2>
-  <p>Kumbotso True Builders kamfani ne na gine-gine da ke Abuja. Mun kware wajen gina gidaje, gyaran gine-gine, da bayar da shawara kan gini. Manufarmu ita ce "Building The Future" tare da inganci da amana.</p>
-  <p><b>Shekaru nawa muke aiki:</b> Fiye da shekaru 5<br>
-  <b>Ayyukan da muka kammala:</b> Gidaje 50+</p>
-</div>
-
-<!-- CUSTOMER REVIEWS / TESTIMONY -->
-<div class="section">
-  <h2>⭐ Abokan Ciniki Sun Fada</h2>
-  <div style="background:#f9f9f9;padding:15px;border-left:4px solid #0a66ff;margin:10px 0;border-radius:5px;">
-    <p>"Sun gina min gida cikin lokaci kuma aiki mai kyau sosai. Ina ba da shawara!"</p>
-    <b>- Malam Musa, Abuja</b>
-  </div>
-  <div style="background:#f9f9f9;padding:15px;border-left:4px solid #0a66ff;margin:10px 0;border-radius:5px;">
-    <p>"Farashi mai sauki kuma aiki mai tsafta. Kumbotso True Builders su ne mafi kyau."</p>
-    <b>- Hajiya Aisha, Kumbotso</b>
-  </div>
-  <div style="background:#f9f9f9;padding:15px;border-left:4px solid #0a66ff;margin:10px 0;border-radius:5px;">
-    <p>"Professional ne kuma suna sadarwa. Zan sake kira su don wani aiki."</p>
-    <b>- Engr. Yusuf</b>
-  </div>
-</div>
 <div class="sticky-btns">
-  <a href="tel:+2347038118332" class="call">kira yanzu</a>
-  <a href="https://wa.me/2347064851422" target="_blank">whatsapp</a>
+  <a href="tel:+234XXXXXXXXXX" class="call">kira yanzu</a>
+  <a href="https://wa.me/234XXXXXXXXXX" target="_blank">whatsapp</a>
 </div>
 
 <footer>
