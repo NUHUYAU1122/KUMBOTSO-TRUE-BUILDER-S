@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kumbotso true builder's | building the future</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box; scroll-behavior:smooth}
+    body{font-family:arial, sans-serif; background:#f8f9fa; color:#333; text-transform:lowercase}
+    
+    /* section 1: header + banner + buttons */
+    header{position:sticky; top:0; background:#c00000; color:white; padding:12px 20px; display:flex; align-items:center; gap:15px; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.3)}
+    header img{width:55px; height:55px; border-radius:8px; border:2px solid white}
+    header div h1{font-size:18px}
+    header div p{font-size:12px}
+    
+    .hero{position:relative; height:500px; overflow:hidden}
+    .hero img{width:100%; height:100%; object-fit:cover; filter:brightness(0.5)}
+    .hero-text{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:white; animation:fadein 2s}
+    @keyframes fadein{from{opacity:0} to{opacity:1}}
+    .hero-text h2{font-size:40px; margin-bottom:10px}
+    .hero-text p{font-size:16px; margin-bottom:20px}
+    
+    .buttons{position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:12px; z-index:999}
+    .btn{padding:14px 22px; border-radius:30px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:0.3s}
+    .btn:hover{transform:scale(1.05)}
+    .btn-call{background:#c00000}
+    .btn-whatsapp{background:#25d366}
+
+    /* section 2: location + gallery */
+    section{padding:50px 20px; max-width:1200px; margin:auto}
+    h2{text-align:center; color:#0a2540; font-size:28px; margin-bottom:30px}
+    .location{background:#0a2540; color:white; border-radius:15px; padding:30px; text-align:center; margin-bottom:40px; animation:slideup 1.5s}
+    @keyframes slideup{from{transform:translateY(50px); opacity:0} to{transform:translateY(0); opacity:1}}
+    .location h3{font-size:22px; margin-bottom:10px}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:15px}
+    .grid img{width:100%; height:250px; object-fit:cover; border-radius:12px; transition:0.3s}
+    .grid img:hover{transform:scale(1.03)}
+
+    /* section 3: about + form + reviews */
+    .about{display:flex; flex-wrap:wrap; gap:30px; align-items:center; margin-bottom:40px}
+    .about div{flex:1; min-width:300px}
+    .about img{width:100%; border-radius:15px}
+    .form{background:white; padding:30px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+    .form input, .form textarea{width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:8px; text-transform:lowercase}
+    .form button{background:#c00000; color:white; padding:12px; border:none; border-radius:8px; width:100%; font-weight:bold; cursor:pointer}
+    .reviews{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px}
+    .review{background:white; padding:20px; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+    .review p{font-style:italic; margin-bottom:10px}
+    .review h4{color:#c00000}
+    
+    footer{background:#0a2540; color:white; text-align:center; padding:25px; margin-top:40px}
+    
+    nav a{color:white; text-decoration:none; margin-left:20px; font-weight:bold}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/aiki.jpg" alt="logo">
+    <div>
+      <h1>kumbotso true builders</h1>
+      <p>kano, nigeria | building the future</p>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="#gallery">gallery</a>
+      <a href="#about">about us</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <img src="images/aiki1.jpg" alt="banner">
+    <div class="hero-text">
+      <h2>building the future</h2>
+      <p>industrial structures | property development | infrastructure works | residential estates</p>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <h2>ga wasu daga cikin ayukanmu</h2>
+    <div class="grid">
+      <img src="images/aiki2.jpg" alt="aiki 2">
+      <img src="images/aiki3.jpg" alt="aiki 3">
+      <img src="images/aiki4.jpg" alt="aiki 4">
+      <img src="images/aiki5.jpg" alt="aiki 5">
+      <img src="images/aiki6.jpg" alt="aiki 6">
+      <img src="images/aiki7.jpg" alt="aiki 7">
+      <img src="images/aiki8.jpg" alt="aiki 8">
+      <img src="images/aiki9.jpg" alt="aiki 9">
+      <img src="images/aiki10.jpg" alt="aiki 10">
+      <img src="images/aiki11.jpg" alt="aiki 11">
+      <img src="images/aiki12.jpg" alt="aiki 12">
+      <img src="images/aiki13.jpg" alt="aiki 13">
+      <img src="images/aiki14.jpg" alt="aiki 14">
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>location & address</h2>
+    <div class="location">
+      <h3>kumbotso true builder's limited</h3>
+      <p>kumbotso local government, kano state, nigeria</p>
+      <p>phone: 0738118332</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>about us</h2>
+    <div class="about">
+      <div>
+        <img src="images/aiki2.jpg" alt="about">
+      </div>
+      <div>
+        <h3>we build with integrity</h3>
+        <p>kumbotso true builder's is a leading construction company in kano dedicated to delivering excellent and quality building projects. we specialize in residential estates, industrial structures, and infrastructure works. our mission is to build the future with professionalism and trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>customer reviews & testimony</h2>
+    <div class="reviews">
+      <div class="review">
+        <p>"sun gina mana gida mai inganci cikin kankanin lokaci. muna godiya"</p>
+        <h4>- alhaji sani, kano</h4>
+      </div>
+      <div class="review">
+        <p>"expert design and professional team. highly recommended"</p>
+        <h4>- hajiya amina, kumbotso</h4>
+      </div>
+      <div class="review">
+        <p>"mafi kyawun kamfanin gini a kano. aiki mai tsabta"</p>
+        <h4>- eng. musa, nassarawa</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>get a quotation</h2>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="cika cikakken suna" required>
+        <input type="tel" placeholder="lambar waya" required>
+        <textarea rows="4" placeholder="rubuta abin da kake so mu gina maka" required></textarea>
+        <button type="submit">aika bukatar quotation</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <a href="tel:0738118332" class="btn btn-call">kira yanzu</a>
+    <a href="https://wa.me/234738118332" class="btn btn-whatsapp">whatsapp</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 kumbotso true builder's - dukkan hakkoki an ajiye</p>
+  </footer>
+
+</body>
+</html>
