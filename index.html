@@ -8,14 +8,35 @@
 <meta property="og:title" content="Kumbotso True Builders">
 <meta property="og:description" content="Industrial Structures | Property Development | Kano, Nigeria">
 <style>
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:arial;background:#f8f8f8;color:#333;line-height:1.6}
-:root{--ja:#c00000; --zinariya:#d4af37; --baki:#222}
+:root{
+  --kore:#0B5D1E;       /* Kore mai karfi */
+  --blue:#003366;       /* Blue mai zurfi */
+  --zinariya:#FFD700;   /* Zinariya mai walkiya */
+  --fari:#FFFFFF;
+  --baki:#111111;
+}
+body{font-family:'Poppins',arial;background:var(--fari);color:var(--baki)}
 
-header{position:sticky;top:0;background:var(--baki);color:white;padding:10px 20px;display:flex;align-items:center;gap:15px;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.3)}
-header img{width:120px;height:120px;border-radius:50%;border:3px solid var(--zinariya)}
-header h1{font-size:22px;color:var(--zinariya)}
-header p{font-size:12px}
+/* HEADER MAI KORE DA BLUE */
+header{position:sticky;top:0;background:linear-gradient(90deg,var(--kore),var(--blue));padding:15px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+header h1{font-size:24px;color:var(--zinariya);text-shadow:0 0 10px var(--zinariya)}
+header p{font-size:13px;color:var(--fari)}
+
+/* BUTTON MAI WALKIYA */
+.btn{background:linear-gradient(45deg,var(--zinariya),#FFA500);color:var(--baki);padding:12px 25px;border:none;border-radius:8px;font-weight:bold;animation:walkiya 2s infinite;box-shadow:0 0 15px var(--zinariya)}
+@keyframes walkiya{0%,100%{box-shadow:0 0 15px var(--zinariya)}50%{box-shadow:0 0 30px var(--zinariya),0 0 40px #FFA500}}
+.btn:hover{transform:scale(1.05)}
+
+/* PROJECT CARDS */
+.project-card{border:2px solid var(--kore);border-radius:12px;overflow:hidden;transition:0.4s;background:var(--fari)}
+.project-card:hover{border-color:var(--zinariya);transform:translateY(-8px);box-shadow:0 10px 25px rgba(11,93,30,0.3)}
+.project-card h4{background:linear-gradient(90deg,var(--kore),var(--blue));color:var(--fari);padding:10px;margin:0}
+
+/* FOOTER */
+footer{background:var(--baki);color:var(--fari);text-align:center;padding:20px;border-top:4px solid var(--zinariya)}
+</style>
 
 .hero{position:relative;height:450px;background:url('images/banner.jpg') center/cover}
 .hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:white;background:rgba(0,0,0,0.6);padding:30px;border-radius:10px}
