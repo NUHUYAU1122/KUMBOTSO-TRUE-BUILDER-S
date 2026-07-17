@@ -96,6 +96,17 @@ header p{font-size:13px;color:var(--fari)}
 @keyframes slideUp {from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);}}
 @keyframes fadeIn {from {opacity:0;} to {opacity:1;}} 
 footer{background:var(--baki);color:var(--fari);text-align:center;padding:20px;border-top:4px solid var(--zinariya)}
+ <script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  let name = document.getElementById('name').value;
+  let phone = document.getElementById('phone').value;
+  let msg = document.getElementById('message').value;
+  let whatsapp = "2347064851422"; /* KA SA LAMBAR KA NAN */
+  let text = `SABON BOOKING:%0A*Suna:* ${name}%0A*Lamba:* ${phone}%0A*Sako:* ${msg}`;
+  window.open(`https://wa.me/${whatsapp}?text=${text}`, '_blank');
+}
+</script>
 </style>
 <header>
   
