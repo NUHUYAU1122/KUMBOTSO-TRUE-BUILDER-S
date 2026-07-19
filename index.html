@@ -229,10 +229,17 @@ header{flex-direction:column;text-align:center}
   padding: 20px;
 }
 
+#projects{
+  display: flex;
+  flex-direction: column; /* Wannan yana sa su zo layi 1 */
+  gap: 20px;
+  padding: 20px;
+}
+
 #projects img{
-  width: 30%;        
+  width: 100%;         /* Zai cika fadin akwatin */
   height: 250px;     
-  object-fit: cover; 
+  object-fit: cover;   /* Ba zai miqe ba */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
