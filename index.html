@@ -221,10 +221,20 @@ footer{background:var(--baki);color:white;text-align:center;padding:20px;margin-
 }
 .contact-btns{display: flex; gap: 10px; margin-top: 10px}  
 header{flex-direction:column;text-align:center}
- .gallery img{
-  width: 100%;
-  height: auto;  /* <-- MUNA CANJAWA NAN */
+ #projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#projects img{
+  width: 30%;        
+  height: 250px;     
+  object-fit: cover; 
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 </style>
 </head>
