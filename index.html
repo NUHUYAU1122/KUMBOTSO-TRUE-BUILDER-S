@@ -236,13 +236,21 @@ header{flex-direction:column;text-align:center}
   padding: 20px;
 }
 
-#projects img{
-  width: 100%;         /* Zai cika fadin akwatin */
-  height: 250px;     
-  object-fit: cover;   /* Ba zai miqe ba */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+#projects{
+  display: flex;
+  flex-direction: column; /* Wannan yana tilasta layi 1 1 */
+  gap: 25px;              /* Sarari tsakanin hotuna */
+  padding: 20px;
 }
+
+#projects img{
+  width: 100%;         /* Hoton zai cika */
+  height: 250px;       /* Tsayi ɗaya ga duka */
+  object-fit: cover;   /* Ba zai miqe ba, zai yanke daidai */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+} 
+ 
 </style>
 </head>
 <body>
