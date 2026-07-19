@@ -65,7 +65,14 @@ header p{font-size:13px;color:var(--fari)}
 .btn{background:linear-gradient(45deg,var(--zinariya),#FFA500);color:var(--baki);padding:12px 25px;border:none;border-radius:8px;font-weight:bold;animation:walkiya 2s infinite;box-shadow:0 0 15px var(--zinariya)}
 @keyframes walkiya{0%,100%{box-shadow:0 0 15px var(--zinariya)}50%{box-shadow:0 0 30px var(--zinariya),0 0 40px #FFA500}}
 .btn:hover{transform:scale(1.05)}
-
+/* HOTUNAN PROJECT SU ZAMA DAI-DAI */
+.project-card img{
+  width: 100%;         /* Cika fadin card din */
+  height: 250px;       /* Duk su zama tsayi daya */
+  object-fit: cover;   /* Yanke daidai ba tare da miqewa ba */
+  border-radius: 8px;
+  display: block;
+}
 /* PROJECT CARDS */
 .project-card{border:2px solid var(--kore);border-radius:12px;overflow:hidden;transition:0.4s;background:var(--fari)}
 .project-card:hover{border-color:var(--zinariya);transform:translateY(-8px);box-shadow:0 10px 25px rgba(11,93,30,0.3)}
