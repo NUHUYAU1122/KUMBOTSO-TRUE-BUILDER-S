@@ -29,10 +29,21 @@
 
         <label>Bayani / Project Details:</label><br>
         <textarea style="width: 100%; padding: 10px; height: 100px;"></textarea><br><br>
-
-        <button type="submit" style="background: green; color: white; padding: 15px; width: 100%; border: none; border-radius: 5px;">
-            Turo | Send Request
-        </button>
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  let suna = document.querySelector('input[type="text"]').value;
+  let lamba = document.querySelector('input[type="tel"]').value;
+  let wuri = document.querySelectorAll('input[type="text"]')[1].value;
+  let sako = document.querySelector('textarea').value;
+  
+  let whatsapp = "2347038118332";
+  let text = `SABON NEMAN KIMA:%0A%0A*Suna:* ${suna}%0A*Lamba:* ${lamba}%0A*Wuri:* ${wuri}%0A*Bayani:* ${sako}`;
+  
+  window.open(`https://wa.me/${whatsapp}?text=${text}`);
+}
+</script>
+    
     </form>
 
     <h3 style="text-align: center; margin-top: 20px;">
