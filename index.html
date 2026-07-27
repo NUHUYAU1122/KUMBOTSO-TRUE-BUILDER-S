@@ -253,13 +253,6 @@ function sendWhatsApp(e){
 <footer>
 <p>© 2026 KUMBOTSO TRUE BUILDERS. Duk haƙin mallaka an kiyaye. All Rights Reserved.</p>
 </footer>
-
-<script>
-function sendWhatsApp(e){
-  e.preventDefault();
-  let suna = document.getElementById('suna').value;
-  let lamba = document.getElementById('lamba').value;
-  let sako = document.getElementById('sako').value;
   let whatsapp = "2347038118332"; 
   let text = `SABON NEMAN KIMA:%0A*Suna/Name:* ${suna}%0A*Lamba/Phone:* ${lamba}%0A*Sako/Message:* ${sako}`;
   window.open(`https://wa.me/${whatsapp}?text=${text}`, '_blank');
