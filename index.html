@@ -224,7 +224,23 @@ footer{background:var(--baki);color:var(--fari);text-align:center;padding:20px;b
 </section>
 <div class="contact-btns">
   <a href="tel:07038118332" class="btn-call">📞 Call Us</a>
-  <a href="https://wa.me/2347064851422" class="btn-whatsapp" target="_blank">💚 WhatsApp</a>
+  <script>
+function sendWhatsApp(e){
+    e.preventDefault();
+    let suna = document.getElementById('suna').value;
+    let lambar = document.getElementById('lambar').value;
+    let sako = document.getElementById('sako').value;
+    
+    let text = `*SABON NEMAN KIMA*%0A%0A` +
+               `*Suna:* ${suna}%0A` +
+               `*Lambar:* ${lambar}%0A` +
+               `*Aiki:* ${sako}`;
+    
+    let whatsappNumber = "2347064851422"; // Lambar ka
+    let url = `https://wa.me/${whatsappNumber}?text=${text}`;
+    window.open(url, '_blank');
+}
+</script>
 </div>
 <!-- SHARE BUTTONS -->
 <section style="text-align:center; padding:40px 20px; background:#f1f1f1">
