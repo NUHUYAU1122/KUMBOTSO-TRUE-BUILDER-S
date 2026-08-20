@@ -1,296 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ha">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KUMBOTSO TRUE BUILDERS | Expert Construction Company in Kano, Nigeria</title>
-<meta name="description" content="KUMBOTSO TRUE BUILDERS - Leading Construction, Renovation & Contractors in Kano. We build Duplex, Flats, Schools, Hospitals with Trust & Quality. Free Quote: 07064851422">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Kumbotso True Builders | Gini na Gaskiya</title>
+<meta property="og:image" content="https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/images/thumbnail.jpg">
+<meta property="og:title" content="Kumbotso True Builders">
+<meta property="og:description" content="Industrial Structures | Property Development | Kano, Nigeria">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--kore:#0B5D1E; --blue:#003366; --zinariya:#FFD700; --fari:#FFF; --baki:#111; --gray:#f5f5f5;}
-body{font-family:'Poppins',sans-serif;background:var(--fari);color:var(--baki);line-height:1.7}
-html{scroll-behavior:smooth}
-h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:700}
-header{position:fixed;top:0;width:100%;background:rgba(0,51,102,0.95);backdrop-filter:blur(10px);padding:15px 5%;display:flex;align-items:center;justify-content:space-between;z-index:1000}
-.logo-area{display:flex;align-items:center;gap:12px}
-.logo{width:55px;height:55px;background:var(--zinariya);color:var(--baki);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:26px}
-header h1{font-size:20px;color:var(--zinariya)}
-nav a{color:white;text-decoration:none;margin:0 12px;font-weight:600;transition:0.3s;font-size:14px}
-nav a:hover{color:var(--zinariya)}
-.hero{height:100vh;min-height:700px;background:linear-gradient(rgba(0,51,102,0.85), rgba(11,93,30,0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831') center/cover fixed;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:0 20px}
-.hero-content{max-width:900px;animation:fadeInUp 1.2s ease}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.hero h1{font-size:52px;font-weight:900;color:var(--zinariya);margin-bottom:20px;line-height:1.2}
-.hero p{font-size:20px;margin-bottom:15px}
-.hero-location{display:inline-block;background:rgba(255,215,0,0.2);border:1px solid var(--zinariya);padding:10px 20px;border-radius:30px;font-size:15px;margin:20px 0}
-.btn-group{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.btn-primary{background:var(--zinariya);color:var(--baki);padding:18px 35px;border-radius:50px;text-decoration:none;font-weight:700;font-size:16px;transition:0.3s;box-shadow:0 8px 20px rgba(255,215,0,0.3)}
-.btn-primary:hover{transform:translateY(-3px)}
-.btn-secondary{background:transparent;color:white;border:2px solid white;padding:18px 35px;border-radius:50px;text-decoration:none;font-weight:700;font-size:16px;transition:0.3s}
-.btn-secondary:hover{background:white;color:var(--blue)}
-.trust-badges{display:flex;justify-content:center;gap:50px;padding:50px 20px;background:var(--gray);flex-wrap:wrap}
-.badge{text-align:center}
-.badge h3{font-size:42px;color:var(--blue);font-weight:900}
-section{padding:80px 5%;max-width:1300px;margin:auto}
-.section-title{text-align:center;font-size:40px;margin-bottom:15px;color:var(--blue)}
-.subtitle{text-align:center;color:#666;margin-bottom:50px;font-size:17px}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-img{border-radius:15px;box-shadow:0 15px 40px rgba(0,0,0,0.15);width:100%}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
-.service-card{background:white;padding:35px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:0.4s;border-top:4px solid var(--zinariya)}
-.service-card:hover{transform:translateY(-10px)}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
-.project-card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:0.4s}
-.project-card img{width:100%;height:280px;object-fit:cover}
-.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px}
-.review-box{background:#fff;padding:30px;border-radius:15px;border-left:5px solid var(--zinariya)}
-.stars{color:#FFA500;font-size:20px;margin-bottom:15px}
-.lang-en{margin-top:10px;padding-top:10px;border-top:1px dashed #ddd;color:#555;font-style:italic}
-#quote{background:linear-gradient(135deg,var(--kore),var(--blue));color:white}
-.form-box{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:40px;border-radius:20px;max-width:700px;margin:auto}
-input, textarea{width:100%;padding:16px;border-radius:10px;margin-bottom:20px;border:2px solid rgba(255,215,0,0.3);background:rgba(255,255,255,0.1);color:white;font-size:15px}
-input::placeholder, textarea::placeholder{color:rgba(255,255,255,0.7)}
-.faq-item{background:white;padding:20px;border-radius:10px;margin-bottom:15px;border-left:4px solid var(--zinariya)}
-.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.contact-box{background:white;padding:30px;border-radius:15px;border-top:4px solid var(--zinariya);text-align:center}
-.social-links{display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-top:30px}
-.social-links a{background:var(--blue); color:white; padding:12px 20px; border-radius:10px; text-decoration:none; font-weight:600;transition:0.3s}
-.social-links a:hover{background:var(--zinariya);color:var(--baki)}
-.share-section{background:var(--gray); padding:40px 20px; text-align:center}
-.share-btn{padding:12px 18px; border-radius:8px; text-decoration:none; margin:5px; display:inline-block; font-weight:600; color:white}
-.floating-btns{position:fixed; bottom:25px; right:25px; display:flex; flex-direction:column; gap:12px; z-index:999;}
-.btn-call,.btn-whatsapp,.btn-invoice{padding:15px 22px; border-radius:50px; text-decoration:none; font-weight:700;color:white;box-shadow:0 8px 20px rgba(0,0,0,0.2)}
-.btn-call{background:#004aad;} .btn-whatsapp{background:#25D366;} .btn-invoice{background:#FFA500;}
-footer{background:var(--baki);color:var(--fari);text-align:center;padding:30px;border-top:4px solid var(--zinariya)}
-@media(max-width:768px){.hero h1{font-size:36px} nav{display:none} .about-grid{grid-template-columns:1fr}}
+body{font-family:arial;background:#f8f8f8;color:#333;line-height:1.6}
+:root{--ja:#c00000; --zinariya:#d4af37; --baki:#222}
+
+header{position:sticky;top:0;background:var(--baki);color:white;padding:10px 20px;display:flex;align-items:center;gap:15px;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.3)}
+header img{width:120px;height:120px;border-radius:50%;border:3px solid var(--zinariya)}
+header h1{font-size:22px;color:var(--zinariya)}
+header p{font-size:12px}
+
+.hero{position:relative;height:450px;background:url('images/banner.jpg') center/cover}
+.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:white;background:rgba(0,0,0,0.6);padding:30px;border-radius:10px}
+.hero-text h2{font-size:32px;margin-bottom:10px;color:var(--zinariya)}
+.hero-text p{font-size:16px;margin-bottom:20px}
+
+.btn-quote{background:var(--ja);color:white;padding:15px 30px;border:none;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer}
+.btn-quote:hover{background:var(--zinariya);color:var(--baki)}
+
+section{padding:50px 20px;max-width:1100px;margin:auto}
+h2.section-title{text-align:center;font-size:28px;margin-bottom:30px;color:var(--ja);border-bottom:3px solid var(--zinariya);display:inline-block;padding-bottom:10px}
+
+.about{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
+.about img{width:100%;max-width:400px;border-radius:10px;border:3px solid var(--zinariya)}
+.about-text{flex:1}
+
+.menu{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;background:var(--baki);padding:15px;position:sticky;top:140px;z-index:99}
+.menu a{color:white;text-decoration:none;padding:10px 20px;border-radius:5px;font-weight:bold}
+.menu a:hover{background:var(--zinariya);color:var(--baki)}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.project-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,0.1)}
+.project-card img{width:100%;height:200px;object-fit:cover}
+.project-card div{padding:15px}
+
+.testimony{background:var(--zinariya);color:var(--baki);padding:30px;border-radius:10px;text-align:center;font-style:italic}
+
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.contact-box{background:white;padding:20px;border-radius:10px;border-left:5px solid var(--ja)}
+
+.buttons{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px}
+.buttons a{background:var(--ja);color:white;padding:15px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+
+footer{background:var(--baki);color:white;text-align:center;padding:20px;margin-top:40px}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo-area"><div class="logo">K</div><div><h1>KUMBOTSO TRUE BUILDERS</h1></div></div>
-<nav>
-<a href="#about">About / Game Da Mu</a>
-<a href="#services">Services / Ayyuka</a>
-<a href="#projects">Projects / Hotuna</a>
-<a href="#reviews">Reviews / Shaida</a>
-<a href="#faq">FAQ / Tambayoyi</a>
-<a href="#contact">Contact / Tuntube Mu</a>
-</nav>
+<img src="images/aiki.jpg" alt="Logo">
+<div>
+<h1>Kumbotso True Builders</h1>
+<p>Industrial Structures | Gidaje | Property Development</p>
+</div>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>BUILDING DREAMS WITH TRUST<br><span style="font-size:32px">GINA MAFARKI TARE DA AMANA</span></h1>
-    <p>Expert Construction, Renovation & Contractors in Kano, Nigeria<br>Masana Gina, Gyara da Kwantiragi a Kano, Nigeria</p>
-    <div class="hero-location">📍 Kumbotso, Kano State, Nigeria</div>
-    <div class="btn-group">
-      <a href="#quote" class="btn-primary">Get Free Quote / Nemi Kima Kyauta</a>
-      <a href="#projects" class="btn-secondary">View Projects / Duba Ayyuka</a>
-    </div>
-  </div>
-</section>
+<nav class="menu">
+<a href="#about">About Us / Game Da Mu</a>
+<a href="#projects">Projects / Ayyuka</a>
+<a href="#testimony">Testimonials / Shaida</a>
+<a href="#contact">Contact / Tuntu6e Mu</a>
+</nav>
 
-<div class="trust-badges">
-  <div class="badge"><h3>10+</h3><p>Years Experience / Shekaru</p></div>
-  <div class="badge"><h3>50+</h3><p>Projects Done / Ayuka</p></div>
-  <div class="badge"><h3>100%</h3><p>Client Trust / Amana</p></div>
+<div class="hero">
+<div class="hero-text">
+<h2>Mu Gina Makomar Ka da Gaskiya</h2>
+<p>We Build Your Future with Integrity<br>Industrial Structures & Property Development in Kano</p>
+<button class="btn-quote" onclick="document.getElementById('quote').scrollIntoView()">Get Free Quotation / Nemi Kima Kyauta</button>
+</div>
 </div>
 
 <section id="about">
 <h2 class="section-title">About Us / Game Da Mu</h2>
-<p class="subtitle">Your Trusted Partner in Construction Excellence</p>
-<div class="about-grid">
-<img src="https://images.unsplash.com/photo-1541888943205-45eaf7e42249?q=80&w=1470" alt="Construction Team" class="about-img">
-<div>
-<p><b>Hausa:</b> Mu <b>KUMBOTSO TRUE BUILDERS</b> ne kamfani na gine-gine da ke Kumbotso, Kano. Tare da shekaru 10+ na kwarewa, mun gina Duplex, Flats, Makarantu, Asibiti da Masana'antu masu inganci. Manufar mu ita ce <b>Amana, Inganci, da isar da aiki cikin lokaci</b>.</p>
-<p style="margin-top:15px"><b>English:</b> We are <b>KUMBOTSO TRUE BUILDERS</b>, a leading construction company based in Kumbotso, Kano. With 10+ years of experience, we specialize in Duplex, Flats, Schools, Hospitals and Industrial projects. Our mission is <b>Trust, Quality, and Timely Delivery</b>.</p>
+<div class="about">
+<img src="images/aiki.jpg" alt="About Us">
+<div class="about-text">
+<h3>Kwararru a Gina / Experts in Construction</h3>
+<p><b>Hausa:</b> Kumbotso True Builders kamfani ne na gini da ke Kano, Nigeria. Muna gina Industrial Structures, Gidaje, da duk wani aikin Property Development da gaskiya da kwararrun hannu. Manufarmu ita ce mu ba ka gini mai inganci wanda zai dore shekaru.</p>
+<p><b>English:</b> Kumbotso True Builders is a construction company based in Kano, Nigeria. We specialize in Industrial Structures, Residential Buildings, and Property Development with integrity and expert craftsmanship. Our mission is to deliver quality construction that lasts for generations.</p>
 </div>
 </div>
 </section>
 
-<section id="services" style="background:var(--gray)">
-<h2 class="section-title">Our Services / Ayyukan Mu</h2>
-<div class="services-grid">
-<div class="service-card"><h3>🏠 Residential Buildings</h3><p><b>Hausa:</b> Gina Duplex, Flats da Gidajen Alfarma<br><b>English:</b> Duplex, Flats and Luxury Homes</p></div>
-<div class="service-card"><h3>🏫 Government Projects</h3><p><b>Hausa:</b> Gina Makarantu, Asibiti da Kwalejoji<br><b>English:</b> Schools, Hospitals and Colleges</p></div>
-<div class="service-card"><h3>🏭 Industrial & Commercial</h3><p><b>Hausa:</b> Masana'antu, Warehouses da Shopping Complex<br><b>English:</b> Factories, Warehouses and Complex</p></div>
-<div class="service-card"><h3>🔨 Renovation</h3><p><b>Hausa:</b> Gyara Gida, Painting, Tiling da Roofing<br><b>English:</b> Renovation, Painting, Tiling, Roofing</p></div>
-</div>
-</section>
-
-<!-- PROJECTS - 14 PROJECTS FROM 1 TO 14 -->
 <section id="projects">
-<h2 class="section-title">Our Projects / Hotunan Ayyuka</h2>
-<p class="subtitle">All 14 Projects Completed / Duka Ayyuka 14 da muka kammala</p>
-<div class="projects-grid">
-
-<!-- PROJECT 1 -->
+<h2 class="section-title">Our Projects / Ayyukan Mu</h2>
+<div class="projects">
 <div class="project-card">
-<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1470" alt="Industrial Project Kumbotso">
-<div class="project-info"><h4>1. Industrial Project</h4><p><b>Hausa:</b> Aikin Masana'antu a Kumbotso<br><b>English:</b> Industrial Warehouse Construction</p></div>
+<img src="images/banner.jpg" alt="Project 1">
+<div><h4>Industrial Warehouse</h4><p>Hausa: Gina Ma'ajiya ta zamani<br>English: Modern Warehouse Construction</p></div>
 </div>
-
-<!-- PROJECT 2 -->
 <div class="project-card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470" alt="Residential Building Kano">
-<div class="project-info"><h4>2. Residential Building</h4><p><b>Hausa:</b> Ginin Gida Mai Daki 3<br><b>English:</b> 3 Bedroom Residential House</p></div>
+<img src="images/aiki.jpg" alt="Project 2">
+<div><h4>Residential Building</h4><p>Hausa: Ginin Gida mai Daki 4<br>English: 4 Bedroom Residential House</p></div>
 </div>
-
-<!-- PROJECT 3 -->
 <div class="project-card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1470" alt="School Building Kano">
-<div class="project-info"><h4>3. School Building</h4><p><b>Hausa:</b> Ginin Makaranta ta Gwamnati<br><b>English:</b> Government School Construction</p></div>
+<img src="images/thumbnail.jpg" alt="Project 3">
+<div><h4>Property Development</h4><p>Hausa: Raya Wuri<br>English: Land & Property Development</p></div>
 </div>
-
-<!-- PROJECT 4 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1469" alt="Shopping Complex Kano">
-<div class="project-info"><h4>4. Shopping Complex</h4><p><b>Hausa:</b> Gina Kasuwa da Shaguna<br><b>English:</b> Shopping Plaza and Stores</p></div>
-</div>
-
-<!-- PROJECT 5 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1486406146926-u3fd7af71a90?q=80&w=1470" alt="Office Building Kano">
-<div class="project-info"><h4>5. Office Building</h4><p><b>Hausa:</b> Ginin Ofis na Kamfani<br><b>English:</b> Corporate Office Building</p></div>
-</div>
-
-<!-- PROJECT 6 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1587351021759-3e566b480dbe?q=80&w=1471" alt="Hospital Kano">
-<div class="project-info"><h4>6. Hospital</h4><p><b>Hausa:</b> Gina Asibiti da Clinic<br><b>English:</b> Hospital and Clinic Construction</p></div>
-</div>
-
-<!-- PROJECT 7 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd9?q=80&w=1470" alt="Road Construction Kano">
-<div class="project-info"><h4>7. Road Construction</h4><p><b>Hausa:</b> Gina Hanya da Drainage<br><b>English:</b> Road and Drainage Project</p></div>
-</div>
-
-<!-- PROJECT 8 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1470" alt="Warehouse Kano">
-<div class="project-info"><h4>8. Warehouse</h4><p><b>Hausa:</b> Ginin Ma'ajiya<br><b>English:</b> Large Warehouse Construction</p></div>
-</div>
-
-<!-- PROJECT 9 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1470" alt="Apartment Kano">
-<div class="project-info"><h4>9. Apartment</h4><p><b>Hausa:</b> Gina Falo da Duplex<br><b>English:</b> Apartment and Duplex Flats</p></div>
-</div>
-
-<!-- PROJECT 10 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1374" alt="Villa Kano">
-<div class="project-info"><h4>10. Villa</h4><p><b>Hausa:</b> Gida Mai Alfarma<br><b>English:</b> Luxury Villa Construction</p></div>
-</div>
-
-<!-- PROJECT 11 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1475" alt="Factory Kano">
-<div class="project-info"><h4>11. Factory</h4><p><b>Hausa:</b> Gina Masana'anta<br><b>English:</b> Factory Construction</p></div>
-</div>
-
-<!-- PROJECT 12 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470" alt="Estate Kano">
-<div class="project-info"><h4>12. Estate</h4><p><b>Hausa:</b> Ginin Gidaje na Estate<br><b>English:</b> Housing Estate Development</p></div>
-</div>
-
-<!-- PROJECT 13 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1541888943205-45eaf7e42249?q=80&w=1470" alt="Construction Site Kano">
-<div class="project-info"><h4>13. Construction Site</h4><p><b>Hausa:</b> Wurin Aikin Gini<br><b>English:</b> Major Construction Site</p></div>
-</div>
-
-<!-- PROJECT 14 -->
-<div class="project-card">
-<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1470" alt="Bridge Construction Kano">
-<div class="project-info"><h4>14. Bridge</h4><p><b>Hausa:</b> Gina Gada<br><b>English:</b> Bridge Construction Project</p></div>
-</div>
-
-<section id="reviews" style="background:var(--gray)">
-<h2 class="section-title">Client Reviews / Abokan Ciniki Sunce</h2>
-<div class="review-grid">
-<div class="review-box"><div class="stars">⭐⭐⭐⭐⭐</div><p><b>Hausa:</b> "Sun gina min gida cikin lokaci kuma da inganci. Allah ya saka masu."</p><p class="lang-en"><b>English:</b> "They built my house on time with excellent quality. May Allah reward them."</p><h4>- Alh. Musa, Kumbotso</h4></div>
-<div class="review-box"><div class="stars">⭐⭐⭐⭐</div><p><b>Hausa:</b> "Na ba da shawara ga kowa. Suna da gaskiya kuma farashi mai sauki."</p><p class="lang-en"><b>English:</b> "I recommend them. Honest and fair pricing. Very neat work."</p><h4>- Hajiya Aisha, Kano</h4></div>
-<div class="review-box"><div class="stars">⭐⭐⭐⭐⭐</div><p><b>Hausa:</b> "Sun gyara min ofis na cikin kwana 7 kawai. Masana gaskiya."</p><p class="lang-en"><b>English:</b> "They renovated my office in just 7 days. True professionals."</p><h4>- Engr. Bello, Kano</h4></div>
 </div>
 </section>
 
-<section id="faq">
-<h2 class="section-title">FAQ / Tambayoyin da Ake Yi</h2>
-<div class="faq-item">
-<h4><b>Hausa:</b> Me tsawon lokacin da aiki yake dauka?</h4>
-<p>Ya danganta da girman aikin. Amma muna ba da lokaci a cikin quotation.</p>
-<p class="lang-en"><b>English:</b> How long does a project take? It depends on size. We provide timeline in quotation.</p>
-</div>
-<div class="faq-item">
-<h4><b>Hausa:</b> Kuna ba da kima kyauta?</h4>
-<p>E mana. Tuntube mu yanzu don kima kyauta cikin awa 24.</p>
-<p class="lang-en"><b>English:</b> Do you offer free quotation? Yes. Contact us for free quote within 24hrs.</p>
+<section id="testimony">
+<h2 class="section-title">Client Testimony / Shaida daga Abokin Ciniki</h2>
+<div class="testimony">
+<p>"Na yi aiki da Kumbotso True Builders kuma sun ba ni gini mai kyau sosai, cikin lokaci da farashi mai sauki. Ina ba da shawara 100%"</p>
+<p><b>"I worked with Kumbotso True Builders and they delivered excellent quality work, on time and at a fair price. I recommend them 100%"</b></p>
+<p>- Alhaji Musa, Kano</p>
 </div>
 </section>
 
 <section id="quote">
-<h2 class="section-title" style="color:var(--zinariya)">Get Free Quote / Nemi Kima Kyauta</h2>
-<p class="subtitle" style="color:#ddd">Fill the form and we will contact you within 24 hours</p>
-<div class="form-box">
-<form onsubmit="sendWhatsApp(event)">
-<input type="text" id="suna" placeholder="Full Name / Sunan Ka" required>
-<input type="tel" id="lamba" placeholder="WhatsApp Number / Lambar Waya" required>
-<textarea id="sako" placeholder="Describe your project / Bayyana aikin da kake so..." required rows="5"></textarea>
-<button type="submit" class="btn-primary">Send to WhatsApp / Turo Saƙo 💚</button>
+<h2 class="section-title">Get Free Quotation / Nemi Kima Kyauta</h2>
+<p style="text-align:center;margin-bottom:20px"><b>Hausa:</b> Cika form din nan mu turo maka kima cikin awanni 24<br>
+<b>English:</b> Fill this form and we will send you a quotation within 24 hours</p>
+<form style="background:white;padding:20px;border-radius:10px">
+<input type="text" placeholder="Suna / Full Name" style="width:100%;padding:10px;margin:10px 0">
+<input type="tel" placeholder="Lamba / Phone Number" style="width:100%;padding:10px;margin:10px 0">
+<textarea placeholder="Bayani / Project Description" style="width:100%;padding:10px;margin:10px 0;height:100px"></textarea>
+<button type="submit" class="btn-quote" style="width:100%">Aika / Send Request</button>
 </form>
-</div>
 </section>
 
 <section id="contact">
-<h2 class="section-title">Contact Us / Tuntube Mu</h2>
+<h2 class="section-title">Contact & Location / Tuntu6e Mu</h2>
 <div class="contact-grid">
-<div class="contact-box"><h3>📍 Address / Adireshi</h3><p>Kumbotso, Kano State, Nigeria</p></div>
-<div class="contact-box"><h3>📞 Phone / Lambar Waya</h3><p><a href="tel:07064851422">07064851422</a></p></div>
-<div class="contact-box"><h3>💬 WhatsApp</h3><p><a href="https://wa.me/2347064851422">Chat Now</a></p></div>
+<div class="contact-box">
+<h4>📍 Address / Adireshi</h4>
+<p><b>Hausa:</b> Kumbotso, Kano State, Nigeria<br>
+<b>English:</b> Kumbotso, Kano State, Nigeria</p>
 </div>
-<div style="margin:50px 0;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.5!2d8.5167!3d11.9764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS2FubywgTmlnZXJpYQ!5e0!3m2!1sen!2sng!4v0" width="100%" height="400" style="border:0; border-radius:15px;" allowfullscreen loading="lazy"></iframe></div>
-<h3 style="text-align:center; margin-bottom:20px">Follow Us / Bi Mu</h3>
-<div class="social-links">
-<a href="https://facebook.com/KumbotsoTrueBuilders" target="_blank">Facebook</a>
-<a href="https://instagram.com/kumbotsobuilders" target="_blank">Instagram</a>
-<a href="https://tiktok.com/@kumbotsobuilders" target="_blank">TikTok</a>
-<a href="https://youtube.com/@kumbotsobuilders" target="_blank">YouTube</a>
-<a href="https://x.com/kumbotsobuilders" target="_blank">X / Twitter</a>
-<a href="https://wa.me/2347064851422" target="_blank">WhatsApp</a>
+<div class="contact-box">
+<h4>📍 Location / Wurin Mu</h4>
+<iframe src="https://maps.google.com/maps?q=kumbotso%20kano&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;border-radius:8px"></iframe>
 </div>
-</section> 
-
-<section class="share-section">
-<h3>Share Our Work / Raba Aikin Mu</h3>
-<a href="https://wa.me/?text=KUMBOTSO%20TRUE%20BUILDERS%20https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/" target="_blank" class="share-btn" style="background:#25D366">WhatsApp</a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/" target="_blank" class="share-btn" style="background:#1877F2">Facebook</a>
-<a href="https://twitter.com/intent/tweet?url=https://nuhuyau1122.github.io/KUMBOTSO-TRUE-BUILDER-S/" target="_blank" class="share-btn" style="background:#000">X / Twitter</a>
+<div class="contact-box">
+<h4>📞 Phone / Lambar Waya</h4>
+<p>+234 XXX XXX XXXX</p>
+</div>
+</div>
 </section>
 
-<div class="floating-btns">
-  <a href="tel:07064851422" class="btn-call">📞 Call / Kira</a>
-  <a href="https://wa.me/2347064851422" class="btn-whatsapp">💬 WhatsApp</a>
-  <a href="#quote" class="btn-invoice">📄 Get Quote / Nemi Kima</a>
+<div class="buttons">
+<a href="tel:+234XXXXXXXXXX">📞 Call / Kira</a>
+<a href="https://wa.me/234XXXXXXXXXX">💬 WhatsApp</a>
 </div>
 
 <footer>
-<p>© 2026 KUMBOTSO TRUE BUILDERS. Building with Trust & Quality. Duk haƙin mallaka an kiyaye. All Rights Reserved.</p>
+<p>© 2026 Kumbotso True Builders. All Rights Reserved / Dukkan Haqqoqi Anadore</p>
 </footer>
 
-<script>
-function sendWhatsApp(e){
-    e.preventDefault();
-    let suna = document.getElementById('suna').value;
-    let lamba = document.getElementById('lamba').value;
-    let sako = document.getElementById('sako').value;
-    let text = `*NEW QUOTATION REQUEST / SABON NEMAN KIMA*%0A%0A*Name/Suna:* ${suna}%0A*Phone/Lambar:* ${lamba}%0A*Project/Aiki:* ${sako}`;
-    window.open(`https://wa.me/2347064851422?text=${text}`, '_blank');
-}
-</script>
 </body>
 </html>
