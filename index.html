@@ -271,9 +271,35 @@ input,textarea,select{width:100%;padding:15px;border-radius:12px;margin-bottom:1
 @keyframes pulseG{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.9),0 0 20px rgba(37,211,102,0.6)}50%{box-shadow:0 0 0 30px rgba(37,211,102,0),0 0 40px rgba(37,211,102,0.8)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 0 20px rgba(37,211,102,0.6)}}
 @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 </style>
+
+<!-- SABON BUTTONS - KARAMI - DAYA KAWAI - BA DOUBLE BA -->
+<style>
+.floating{position:fixed;bottom:18px;right:12px;display:flex;flex-direction:column;gap:10px;z-index:9999}
+.btn-call{ 
+  background:#FF0000;
+  color:white;padding:10px 18px;border-radius:40px;text-decoration:none;
+  font-weight:800;font-size:13px;text-align:center;
+  border:2px solid white;box-shadow:0 4px 12px rgba(255,0,0,0.5);
+  animation: bounceSmall 0.9s infinite alternate;
+  line-height:1.2;display:block;
+}
+.btn-wa{ 
+  background:#25D366;
+  color:white;padding:10px 18px;border-radius:40px;text-decoration:none;
+  font-weight:800;font-size:13px;text-align:center;
+  border:2px solid white;box-shadow:0 4px 12px rgba(37,211,102,0.5);
+  animation: bounceSmall 0.9s infinite alternate-reverse;
+  line-height:1.2;display:block;
+}
+@keyframes bounceSmall{
+  0%{transform:translateY(0px) scale(1)}
+  100%{transform:translateY(-8px) scale(1.03)}
+}
+</style>
 <div class="floating">
-<a href="tel:07064851422" class="btn-call">🔴 CALL - JA - KIRA YANZU<br>📞 07064851422</a>
-<a href="https://wa.me/2347064851422" class="btn-wa">🟢 WHATSAPP - KORE<br>💬 07064851422</a>
+<a href="tel:07064851422" class="btn-call">🔴 CALL - JA - 07064851422</a>
+<a href="https://wa.me/2347064851422" class="btn-wa">🟢 WHATSAPP - KORE</a>
+</div>
 </div>
 
 <script>
@@ -287,17 +313,9 @@ function sendWA(e){
  window.open("https://wa.me/2347064851422?text="+text,"_blank");
 }
 </script>
- 
-<section id="contact"><h2 class="title">LOCATION & SOCIAL MEDIA WITH TWITTER X</h2><div class="social">
-<a href="https://facebook.com" style="background:#1877F2">📘 Facebook</a>
-<a href="https://instagram.com" style="background:#E4405F">📸 Instagram</a>
-<a href="https://tiktok.com" style="background:#000">🎵 TikTok</a>
-<a href="https://youtube.com" style="background:red">▶️ YouTube</a>
-<a href="https://x.com/kumbotsobuilders" style="background:#000">🐦 X / Twitter</a>
-<a href="https://wa.me/2347064851422" style="background:#25D366">💬 WhatsApp</a>
-</div></section>
 
-<div class="floating"><a href="tel:07064851422" class="btn-call">🔴 CALL - JA</a><a href="https://wa.me/2347064851422" class="btn-wa">🟢 WHATSAPP - KORE</a></div>
+</body>
+</html>
 
 <footer style="background:#001F3F;color:white;text-align:center;padding:40px;border-top:5px solid #FFD700">
 <p>© 2026 KUMBOTSO TRUE BUILDERS | RC: BN 8976189 | CEO: Nuhu Yau Haruna | 07064851422</p>
